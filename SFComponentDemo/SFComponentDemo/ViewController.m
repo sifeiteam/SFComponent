@@ -10,7 +10,7 @@
 #import <SFComponent/SFRoute.h>
 #import <SFComponent/SFEventCenter.h>
 #import "SFDemo1.h"
-#import <SFComponent/SFColor.h>
+#import <SFComponent/SFColorManager.h>
 #import <SFComponent/SFFont.h>
 
 @interface ViewController ()

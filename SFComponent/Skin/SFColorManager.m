@@ -1,21 +1,21 @@
 //
-//  SFColor.m
+//  SFColorManager.m
 //  SFComponent
 //
 //  Created by XJY on 2019/2/24.
 //
 
-#import "SFColor.h"
+#import "SFColorManager.h"
 #import "SFBundle.h"
 #import "SFComponent.h"
 
-@interface SFColor ()
+@interface SFColorManager ()
 
 @property (nonatomic, strong) NSMutableDictionary *colors;
 
 @end
 
-@implementation SFColor
+@implementation SFColorManager
 
 + (instancetype)sharedInstance {
     static id manager = nil;
@@ -45,7 +45,7 @@
     if (!hexColor || hexColor.length == 0) {
         return nil;
     }
-    return [SFColor colorWithHexString:hexColor alpha:1];
+    return [SFColorManager colorWithHexString:hexColor alpha:1];
 }
 
 /**
