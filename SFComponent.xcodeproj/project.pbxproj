@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56D408932222D92700D82EB8 /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D408912222D92700D82EB8 /* Color.plist */; };
+		56D408942222D92700D82EB8 /* Font.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D408922222D92700D82EB8 /* Font.plist */; };
+		56D408B42222D95C00D82EB8 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408962222D95B00D82EB8 /* SFAppDelegate.m */; };
+		56D408B52222D95C00D82EB8 /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4089B2222D95C00D82EB8 /* SFLanguage.m */; };
+		56D408B62222D95C00D82EB8 /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4089E2222D95C00D82EB8 /* SFRoute.m */; };
+		56D408B72222D95C00D82EB8 /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408A12222D95C00D82EB8 /* SFEventCenter.m */; };
+		56D408B82222D95C00D82EB8 /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408A42222D95C00D82EB8 /* SFConfiguration.m */; };
+		56D408B92222D95C00D82EB8 /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408A72222D95C00D82EB8 /* SFComponentManager.m */; };
+		56D408BA2222D95C00D82EB8 /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408AA2222D95C00D82EB8 /* SFComponent.m */; };
+		56D408BB2222D95C00D82EB8 /* SFFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408AE2222D95C00D82EB8 /* SFFont.m */; };
+		56D408BC2222D95C00D82EB8 /* SFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408B02222D95C00D82EB8 /* SFBundle.m */; };
+		56D408BD2222D95C00D82EB8 /* SFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408B12222D95C00D82EB8 /* SFColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56D408772222D8FB00D82EB8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		56D408792222D8FB00D82EB8 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFComponentBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D408912222D92700D82EB8 /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
+		56D408922222D92700D82EB8 /* Font.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Font.plist; sourceTree = "<group>"; };
+		56D408962222D95B00D82EB8 /* SFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		56D408972222D95B00D82EB8 /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
+		56D408982222D95B00D82EB8 /* SFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		56D4089A2222D95C00D82EB8 /* SFLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLanguage.h; sourceTree = "<group>"; };
+		56D4089B2222D95C00D82EB8 /* SFLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
+		56D4089D2222D95C00D82EB8 /* SFRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
+		56D4089E2222D95C00D82EB8 /* SFRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
+		56D408A02222D95C00D82EB8 /* SFEventCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFEventCenter.h; sourceTree = "<group>"; };
+		56D408A12222D95C00D82EB8 /* SFEventCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEventCenter.m; sourceTree = "<group>"; };
+		56D408A32222D95C00D82EB8 /* SFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConfiguration.h; sourceTree = "<group>"; };
+		56D408A42222D95C00D82EB8 /* SFConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFConfiguration.m; sourceTree = "<group>"; };
+		56D408A62222D95C00D82EB8 /* SFComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
+		56D408A72222D95C00D82EB8 /* SFComponentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
+		56D408A82222D95C00D82EB8 /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
+		56D408A92222D95C00D82EB8 /* SFComponentEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentEventProtocol.h; sourceTree = "<group>"; };
+		56D408AA2222D95C00D82EB8 /* SFComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponent.m; sourceTree = "<group>"; };
+		56D408AB2222D95C00D82EB8 /* SFComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentManager.h; sourceTree = "<group>"; };
+		56D408AC2222D95C00D82EB8 /* SFComponentRouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentRouteProtocol.h; sourceTree = "<group>"; };
+		56D408AE2222D95C00D82EB8 /* SFFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFont.m; sourceTree = "<group>"; };
+		56D408AF2222D95C00D82EB8 /* SFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFColor.h; sourceTree = "<group>"; };
+		56D408B02222D95C00D82EB8 /* SFBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBundle.m; sourceTree = "<group>"; };
+		56D408B12222D95C00D82EB8 /* SFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFColor.m; sourceTree = "<group>"; };
+		56D408B22222D95C00D82EB8 /* SFFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFont.h; sourceTree = "<group>"; };
+		56D408B32222D95C00D82EB8 /* SFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBundle.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56D408762222D8FB00D82EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D408862222D90B00D82EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56D408702222D8FB00D82EB8 = {
+			isa = PBXGroup;
+			children = (
+				56D4087B2222D8FB00D82EB8 /* SFComponent */,
+				56D4088A2222D90B00D82EB8 /* SFComponentBundle */,
+				56D4087A2222D8FB00D82EB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56D4087A2222D8FB00D82EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D408792222D8FB00D82EB8 /* libSFComponent.a */,
+				56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56D4087B2222D8FB00D82EB8 /* SFComponent */ = {
+			isa = PBXGroup;
+			children = (
+				56D408A52222D95C00D82EB8 /* Component */,
+				56D408A22222D95C00D82EB8 /* Configuration */,
+				56D408952222D95B00D82EB8 /* Delegate */,
+				56D4089F2222D95C00D82EB8 /* Event */,
+				56D408992222D95C00D82EB8 /* Language */,
+				56D4089C2222D95C00D82EB8 /* Route */,
+				56D408AD2222D95C00D82EB8 /* Skin */,
+			);
+			path = SFComponent;
+			sourceTree = "<group>";
+		};
+		56D4088A2222D90B00D82EB8 /* SFComponentBundle */ = {
+			isa = PBXGroup;
+			children = (
+				56D408912222D92700D82EB8 /* Color.plist */,
+				56D408922222D92700D82EB8 /* Font.plist */,
+			);
+			path = SFComponentBundle;
+			sourceTree = "<group>";
+		};
+		56D408952222D95B00D82EB8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				56D408962222D95B00D82EB8 /* SFAppDelegate.m */,
+				56D408972222D95B00D82EB8 /* SFAppDelegateProtocol.h */,
+				56D408982222D95B00D82EB8 /* SFAppDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		56D408992222D95C00D82EB8 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				56D4089A2222D95C00D82EB8 /* SFLanguage.h */,
+				56D4089B2222D95C00D82EB8 /* SFLanguage.m */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		56D4089C2222D95C00D82EB8 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				56D4089D2222D95C00D82EB8 /* SFRoute.h */,
+				56D4089E2222D95C00D82EB8 /* SFRoute.m */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		56D4089F2222D95C00D82EB8 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				56D408A02222D95C00D82EB8 /* SFEventCenter.h */,
+				56D408A12222D95C00D82EB8 /* SFEventCenter.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		56D408A22222D95C00D82EB8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				56D408A32222D95C00D82EB8 /* SFConfiguration.h */,
+				56D408A42222D95C00D82EB8 /* SFConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		56D408A52222D95C00D82EB8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				56D408A62222D95C00D82EB8 /* SFComponent.h */,
+				56D408A72222D95C00D82EB8 /* SFComponentManager.m */,
+				56D408A82222D95C00D82EB8 /* SFComponentLifeCycleProtocol.h */,
+				56D408A92222D95C00D82EB8 /* SFComponentEventProtocol.h */,
+				56D408AA2222D95C00D82EB8 /* SFComponent.m */,
+				56D408AB2222D95C00D82EB8 /* SFComponentManager.h */,
+				56D408AC2222D95C00D82EB8 /* SFComponentRouteProtocol.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		56D408AD2222D95C00D82EB8 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				56D408AE2222D95C00D82EB8 /* SFFont.m */,
+				56D408AF2222D95C00D82EB8 /* SFColor.h */,
+				56D408B02222D95C00D82EB8 /* SFBundle.m */,
+				56D408B12222D95C00D82EB8 /* SFColor.m */,
+				56D408B22222D95C00D82EB8 /* SFFont.h */,
+				56D408B32222D95C00D82EB8 /* SFBundle.h */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56D408782222D8FB00D82EB8 /* SFComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D408822222D8FB00D82EB8 /* Build configuration list for PBXNativeTarget "SFComponent" */;
+			buildPhases = (
+				56D408752222D8FB00D82EB8 /* Sources */,
+				56D408762222D8FB00D82EB8 /* Frameworks */,
+				56D408772222D8FB00D82EB8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFComponent;
+			productName = SFComponent;
+			productReference = 56D408792222D8FB00D82EB8 /* libSFComponent.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		56D408882222D90B00D82EB8 /* SFComponentBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D4088C2222D90B00D82EB8 /* Build configuration list for PBXNativeTarget "SFComponentBundle" */;
+			buildPhases = (
+				56D408852222D90B00D82EB8 /* Sources */,
+				56D408862222D90B00D82EB8 /* Frameworks */,
+				56D408872222D90B00D82EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFComponentBundle;
+			productName = SFComponentBundle;
+			productReference = 56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56D408712222D8FB00D82EB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.sf.ios;
+				TargetAttributes = {
+					56D408782222D8FB00D82EB8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					56D408882222D90B00D82EB8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 56D408742222D8FB00D82EB8 /* Build configuration list for PBXProject "SFComponent" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 56D408702222D8FB00D82EB8;
+			productRefGroup = 56D4087A2222D8FB00D82EB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56D408782222D8FB00D82EB8 /* SFComponent */,
+				56D408882222D90B00D82EB8 /* SFComponentBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56D408872222D90B00D82EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D408932222D92700D82EB8 /* Color.plist in Resources */,
+				56D408942222D92700D82EB8 /* Font.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56D408752222D8FB00D82EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D408B62222D95C00D82EB8 /* SFRoute.m in Sources */,
+				56D408B52222D95C00D82EB8 /* SFLanguage.m in Sources */,
+				56D408B92222D95C00D82EB8 /* SFComponentManager.m in Sources */,
+				56D408BB2222D95C00D82EB8 /* SFFont.m in Sources */,
+				56D408BD2222D95C00D82EB8 /* SFColor.m in Sources */,
+				56D408B72222D95C00D82EB8 /* SFEventCenter.m in Sources */,
+				56D408B42222D95C00D82EB8 /* SFAppDelegate.m in Sources */,
+				56D408BC2222D95C00D82EB8 /* SFBundle.m in Sources */,
+				56D408B82222D95C00D82EB8 /* SFConfiguration.m in Sources */,
+				56D408BA2222D95C00D82EB8 /* SFComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D408852222D90B00D82EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		56D408802222D8FB00D82EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56D408812222D8FB00D82EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56D408832222D8FB00D82EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56D408842222D8FB00D82EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56D4088D2222D90B00D82EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SFComponentBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.ios.SFComponentBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		56D4088E2222D90B00D82EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SFComponentBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.ios.SFComponentBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56D408742222D8FB00D82EB8 /* Build configuration list for PBXProject "SFComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D408802222D8FB00D82EB8 /* Debug */,
+				56D408812222D8FB00D82EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D408822222D8FB00D82EB8 /* Build configuration list for PBXNativeTarget "SFComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D408832222D8FB00D82EB8 /* Debug */,
+				56D408842222D8FB00D82EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D4088C2222D90B00D82EB8 /* Build configuration list for PBXNativeTarget "SFComponentBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D4088D2222D90B00D82EB8 /* Debug */,
+				56D4088E2222D90B00D82EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56D408712222D8FB00D82EB8 /* Project object */;
+}

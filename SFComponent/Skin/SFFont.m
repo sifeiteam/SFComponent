@@ -1,0 +1,52 @@
+//
+//  SFFont.m
+//  SFComponent
+//
+//  Created by XJY on 2019/2/24.
+//
+
+#import "SFFont.h"
+#import "SFBundle.h"
+#import "SFComponent.h"
+
+@interface SFFont ()
+
+@property (nonatomic, strong) NSMutableDictionary *fonts;
+
+@end
+
+@implementation SFFont
+
++ (instancetype)sharedInstance {
+    static id manager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        manager = [[[self class] alloc] init];
+    });
+    return manager;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        NSBundle *bundle = [SFBundle bundleWithComponentName:[SFComponent componentName]];
+        
+        NSString *fontPlistPath = [bundle pathForResource:@"Font" ofType:@"plist"];
+        self.fonts = [NSMutableDictionary dictionaryWithContentsOfFile:fontPlistPath];
+    }
+    return self;
+}
+
+- (UIFont *)fontWithKey:(NSString *)key {
+    if (!key || key.length == 0) {
+        return nil;
+    }
+    NSString *fontName = [self.fonts objectForKey:@"font"];
+    CGFloat size = [[self.fonts objectForKey:key] floatValue];
+    if (fontName && fontName.length > 0) {
+        return [UIFont fontWithName:fontName size:size];
+    }
+    return [UIFont systemFontOfSize:size];
+}
+
+@end

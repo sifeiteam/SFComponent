@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0724DF96C5BE0B41DC42347520461D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0F3BAAAC418622154030535799457328 /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E567CD697A68AFAC2C2C83EBE9E7CA1 /* SFComponent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		138CEB1EBE484ACC453B179A1FFB9A55 /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44089DEBBBC09552B41B19E4ED6750EE /* SFComponentManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A2BDADA14B6816A43A0919C87EC9CCA /* SFBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8035ADAFCB917C75C9E5D00FD05C95A5 /* SFBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36599E13595ECBEE5CADC1FE21DE2B29 /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DEBAD634FBEB1BFCF18B5972CCAEB9 /* SFConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		36DFC369E3FD8CD175D694B136C0EF79 /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAC05CDD6DF0B10EBA08912F838163B /* SFLanguage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3C21594E61F8577053F82D6B1E667E3F /* SFEventCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE58A133F0B25954E96FCFF7F61727E /* SFEventCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6284FE801D0DC7762830F9C163AACDCC /* Font.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8761BB800516676DF5F75C8C170FB952 /* Font.plist */; };
+		642333CBE000B89C1FDC7B4767A26901 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4B0A684D56CFCAA66DD4C2C8BF8F6B /* SFAppDelegate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7490B9B2F762A4D7DA96C917596F2CD9 /* SFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7583A0C78F439D29A59EF310F420A /* SFColor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BC2F08014F56B6A7E0F53AEB219684C /* SFComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4AF2DF70C178F75090AE1C3040BE74 /* SFComponent-dummy.m */; };
+		87E4D053DAA1A109DA5F900E259DDE4B /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E3A4ACFE63B31822C71657894C1615 /* SFEventCenter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8AA838EDF358591C6339A18E3C0668A7 /* SFComponentLifeCycleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A34F0CE7C2CF492E2D7D9B16C380AF /* SFComponentLifeCycleProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C5F7090EE24EDF431F7A7171053D47C /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADF352EF1BDF4BB25DE64B0FE3E1CA /* SFRoute.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8D3AE5DF07A30CA1493913EF7B317286 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		99D87C16C297C939B65D05BD7DB57DC8 /* SFLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FB15A2990EAEC2906DAC5901075273 /* SFLanguage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AED608ECEEF83535C21DEBCE08ACE67F /* SFComponentEventProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E275089970517AD5B87C7B42977A9C0B /* SFComponentEventProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B422C5C3FBD5815DE19694BF416EE379 /* SFConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3842A41ADDAD56E0F784EAF165FDE7 /* SFConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3AFBA466812ED0397B3DF8CE79E4B12 /* SFColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3671423668C20710A8C15DB9AA516201 /* SFColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA2D055F150B5C78B35CAC06452D9369 /* SFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BB7528A984B1F4F335574D450CEEAE /* SFBundle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CCDF63D4F3B124378111C51DCD8E4648 /* SFComponentRouteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BB28A58607457DA5B24E35E8BC1D0208 /* SFComponentRouteProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD031EC4CCDDF3C9A7E91ECC83118C4E /* SFRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = CC00E2855B0166E4F5EBA5103EABDFB4 /* SFRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0C69C8D6FC784B56CD0F6FD6C73DBE3 /* SFComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0031D03B3ADCFDFD17A749F5EE70B3FA /* SFComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DCED0D13C21671D15A5263A7F3B4E11A /* SFAppDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E506C654729A403B05CC49FBE22ECC03 /* SFAppDelegateProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DEF0F8848B56E1CA91E2CEE17A0D087D /* SFFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A2150A46D1B689FEF97D106F62A29C6C /* SFFont.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E1AE37365AA33E2E1FEC04F7A3E72302 /* Pods-SFComponentDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87A444FD7BF93540A83001B1E7795F /* Pods-SFComponentDemo-dummy.m */; };
+		EBF118F838D9BAD31E41A40613E2591E /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = B94E546F917479582D76B63F22B7DCC7 /* Color.plist */; };
+		FB40BEDEDEA52E05063B41DD8380CE0E /* SFComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F11CB532808E31AF9F642F7BF15F8633 /* SFComponentManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFC5528FEF4B3CC20206544A3A5F150C /* SFFont.h in Headers */ = {isa = PBXBuildFile; fileRef = A96507F14C9E17D3EAF2F348A7482AB6 /* SFFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFFE5CCAE0F5793E5761F97D232B69A8 /* SFAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DC24213F89C1C57EF48A8B1766B0D7B1 /* SFAppDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044A244D48582FDA210D2721FD740C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E8A52206E2B31ABCAABB36B43CC3F2;
+			remoteInfo = SFComponent;
+		};
+		352E87DBB1BA9DBC11B08D4F8E3C351A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39CEF932701E90FAF5873D1CE2EC21D4;
+			remoteInfo = "SFComponent-SFComponentBundle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0031D03B3ADCFDFD17A749F5EE70B3FA /* SFComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
+		00ADF352EF1BDF4BB25DE64B0FE3E1CA /* SFRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
+		2E567CD697A68AFAC2C2C83EBE9E7CA1 /* SFComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFComponent.m; sourceTree = "<group>"; };
+		3671423668C20710A8C15DB9AA516201 /* SFColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFColor.h; sourceTree = "<group>"; };
+		399D339C419136C2FA9D52C21FEB0A5A /* Pods-SFComponentDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFComponentDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		44089DEBBBC09552B41B19E4ED6750EE /* SFComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
+		443B1AF207F94C752FAD42DBF6705D5A /* Pods-SFComponentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFComponentDemo.release.xcconfig"; sourceTree = "<group>"; };
+		45BB7528A984B1F4F335574D450CEEAE /* SFBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBundle.m; sourceTree = "<group>"; };
+		4F3842A41ADDAD56E0F784EAF165FDE7 /* SFConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFConfiguration.h; sourceTree = "<group>"; };
+		5ED7583A0C78F439D29A59EF310F420A /* SFColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFColor.m; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70DEBAD634FBEB1BFCF18B5972CCAEB9 /* SFConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFConfiguration.m; sourceTree = "<group>"; };
+		78356BE28C44DF099D47A539D5C06065 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SFComponentBundle.bundle; path = "SFComponent-SFComponentBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AA631267CB9684DF48D03EE5B0230A /* libPods-SFComponentDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SFComponentDemo.a"; path = "libPods-SFComponentDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8035ADAFCB917C75C9E5D00FD05C95A5 /* SFBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBundle.h; sourceTree = "<group>"; };
+		8761BB800516676DF5F75C8C170FB952 /* Font.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Font.plist; path = SFComponentBundle/Font.plist; sourceTree = "<group>"; };
+		8CE58A133F0B25954E96FCFF7F61727E /* SFEventCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFEventCenter.h; sourceTree = "<group>"; };
+		8F5EF1A6F22EF63036D2B8EFD8163A9F /* ResourceBundle-SFComponentBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SFComponentBundle-Info.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97B139A5F7D23A05EE57E255399EB9B0 /* SFComponent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFComponent.xcconfig; sourceTree = "<group>"; };
+		A2150A46D1B689FEF97D106F62A29C6C /* SFFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFFont.m; sourceTree = "<group>"; };
+		A96507F14C9E17D3EAF2F348A7482AB6 /* SFFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFFont.h; sourceTree = "<group>"; };
+		AA793BB21F7E44CB382B0A4B40AC6FBA /* SFComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SFComponent.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0165BA997BE6A44F9532D94F8EDFF13 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSFComponent.a; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A34F0CE7C2CF492E2D7D9B16C380AF /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
+		B2FB15A2990EAEC2906DAC5901075273 /* SFLanguage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFLanguage.h; sourceTree = "<group>"; };
+		B6A8AE1DCA0311CF698141E63122573E /* Pods-SFComponentDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFComponentDemo-resources.sh"; sourceTree = "<group>"; };
+		B94E546F917479582D76B63F22B7DCC7 /* Color.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Color.plist; path = SFComponentBundle/Color.plist; sourceTree = "<group>"; };
+		BB28A58607457DA5B24E35E8BC1D0208 /* SFComponentRouteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentRouteProtocol.h; sourceTree = "<group>"; };
+		BF87A444FD7BF93540A83001B1E7795F /* Pods-SFComponentDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFComponentDemo-dummy.m"; sourceTree = "<group>"; };
+		C115D95F7AD27DEF746EC2B9B566671E /* Pods-SFComponentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFComponentDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C34E85E6100585AC16700A743EAD545F /* Pods-SFComponentDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFComponentDemo-frameworks.sh"; sourceTree = "<group>"; };
+		C4E3A4ACFE63B31822C71657894C1615 /* SFEventCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFEventCenter.m; sourceTree = "<group>"; };
+		CC00E2855B0166E4F5EBA5103EABDFB4 /* SFRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
+		DC24213F89C1C57EF48A8B1766B0D7B1 /* SFAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		E275089970517AD5B87C7B42977A9C0B /* SFComponentEventProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentEventProtocol.h; sourceTree = "<group>"; };
+		E2CAF2AB9DDB1D99B919A68B6B489B7B /* SFComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFComponent-prefix.pch"; sourceTree = "<group>"; };
+		E506C654729A403B05CC49FBE22ECC03 /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
+		EC4B0A684D56CFCAA66DD4C2C8BF8F6B /* SFAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		EE07F2C171B6597E1EFD664FDCCFD609 /* Pods-SFComponentDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFComponentDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F11CB532808E31AF9F642F7BF15F8633 /* SFComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentManager.h; sourceTree = "<group>"; };
+		FD4AF2DF70C178F75090AE1C3040BE74 /* SFComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFComponent-dummy.m"; sourceTree = "<group>"; };
+		FDAC05CDD6DF0B10EBA08912F838163B /* SFLanguage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B9C7547BEDE5611FF64997D91BF6171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3AE5DF07A30CA1493913EF7B317286 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9720C03EA67F3A20CC5EE9BD88571F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0724DF96C5BE0B41DC42347520461D94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9173DD51CEEBBFBD05427B0B9676414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE483C23B9D8937394F0E834D5B5605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78AA631267CB9684DF48D03EE5B0230A /* libPods-SFComponentDemo.a */,
+				B0165BA997BE6A44F9532D94F8EDFF13 /* libSFComponent.a */,
+				78356BE28C44DF099D47A539D5C06065 /* SFComponentBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24B8276316736399030A9EF23EA1E374 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B94E546F917479582D76B63F22B7DCC7 /* Color.plist */,
+				8761BB800516676DF5F75C8C170FB952 /* Font.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		294EF5E110E1722FA410B71FCCB0538D /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				CC00E2855B0166E4F5EBA5103EABDFB4 /* SFRoute.h */,
+				00ADF352EF1BDF4BB25DE64B0FE3E1CA /* SFRoute.m */,
+			);
+			name = Route;
+			path = SFComponent/Route;
+			sourceTree = "<group>";
+		};
+		301CB0D1AF3B0E181371F852E7DCFA7B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC24213F89C1C57EF48A8B1766B0D7B1 /* SFAppDelegate.h */,
+				EC4B0A684D56CFCAA66DD4C2C8BF8F6B /* SFAppDelegate.m */,
+				E506C654729A403B05CC49FBE22ECC03 /* SFAppDelegateProtocol.h */,
+			);
+			name = Delegate;
+			path = SFComponent/Delegate;
+			sourceTree = "<group>";
+		};
+		472CA8C32C4A4738F759DD0E634D8B2C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4F3842A41ADDAD56E0F784EAF165FDE7 /* SFConfiguration.h */,
+				70DEBAD634FBEB1BFCF18B5972CCAEB9 /* SFConfiguration.m */,
+			);
+			name = Configuration;
+			path = SFComponent/Configuration;
+			sourceTree = "<group>";
+		};
+		5768E037FA830D0DBC661B3A331DF5DD /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				8CE58A133F0B25954E96FCFF7F61727E /* SFEventCenter.h */,
+				C4E3A4ACFE63B31822C71657894C1615 /* SFEventCenter.m */,
+			);
+			name = Event;
+			path = SFComponent/Event;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B648420A409FC43DCF162029118D67AB /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0FE483C23B9D8937394F0E834D5B5605 /* Products */,
+				CC6B5A62291F5B5734A389D68CAF7C75 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7EB92CC53CEBF930E222A2B10AA7DCBE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F5EF1A6F22EF63036D2B8EFD8163A9F /* ResourceBundle-SFComponentBundle-Info.plist */,
+				97B139A5F7D23A05EE57E255399EB9B0 /* SFComponent.xcconfig */,
+				FD4AF2DF70C178F75090AE1C3040BE74 /* SFComponent-dummy.m */,
+				E2CAF2AB9DDB1D99B919A68B6B489B7B /* SFComponent-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "SFComponentDemo/Pods/Target Support Files/SFComponent";
+			sourceTree = "<group>";
+		};
+		A27F42DDA28E4C2689A97768BEFDCB8D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				B2FB15A2990EAEC2906DAC5901075273 /* SFLanguage.h */,
+				FDAC05CDD6DF0B10EBA08912F838163B /* SFLanguage.m */,
+			);
+			name = Language;
+			path = SFComponent/Language;
+			sourceTree = "<group>";
+		};
+		A728A739CEF0428596FBCB0D1231612B /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				8035ADAFCB917C75C9E5D00FD05C95A5 /* SFBundle.h */,
+				45BB7528A984B1F4F335574D450CEEAE /* SFBundle.m */,
+				3671423668C20710A8C15DB9AA516201 /* SFColor.h */,
+				5ED7583A0C78F439D29A59EF310F420A /* SFColor.m */,
+				A96507F14C9E17D3EAF2F348A7482AB6 /* SFFont.h */,
+				A2150A46D1B689FEF97D106F62A29C6C /* SFFont.m */,
+			);
+			name = Skin;
+			path = SFComponent/Skin;
+			sourceTree = "<group>";
+		};
+		AA18744994A81BA09A2FA14E01CEDF23 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AA793BB21F7E44CB382B0A4B40AC6FBA /* SFComponent.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B648420A409FC43DCF162029118D67AB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E926E38D16ACF3EB528F4D7960BA41E8 /* SFComponent */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC6B5A62291F5B5734A389D68CAF7C75 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D510F93E542521562AC330686FD01B61 /* Pods-SFComponentDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D510F93E542521562AC330686FD01B61 /* Pods-SFComponentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EE07F2C171B6597E1EFD664FDCCFD609 /* Pods-SFComponentDemo-acknowledgements.markdown */,
+				399D339C419136C2FA9D52C21FEB0A5A /* Pods-SFComponentDemo-acknowledgements.plist */,
+				BF87A444FD7BF93540A83001B1E7795F /* Pods-SFComponentDemo-dummy.m */,
+				C34E85E6100585AC16700A743EAD545F /* Pods-SFComponentDemo-frameworks.sh */,
+				B6A8AE1DCA0311CF698141E63122573E /* Pods-SFComponentDemo-resources.sh */,
+				C115D95F7AD27DEF746EC2B9B566671E /* Pods-SFComponentDemo.debug.xcconfig */,
+				443B1AF207F94C752FAD42DBF6705D5A /* Pods-SFComponentDemo.release.xcconfig */,
+			);
+			name = "Pods-SFComponentDemo";
+			path = "Target Support Files/Pods-SFComponentDemo";
+			sourceTree = "<group>";
+		};
+		D6565FEA25AEC15EBA9CBF310BC4AC99 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0031D03B3ADCFDFD17A749F5EE70B3FA /* SFComponent.h */,
+				2E567CD697A68AFAC2C2C83EBE9E7CA1 /* SFComponent.m */,
+				E275089970517AD5B87C7B42977A9C0B /* SFComponentEventProtocol.h */,
+				B2A34F0CE7C2CF492E2D7D9B16C380AF /* SFComponentLifeCycleProtocol.h */,
+				F11CB532808E31AF9F642F7BF15F8633 /* SFComponentManager.h */,
+				44089DEBBBC09552B41B19E4ED6750EE /* SFComponentManager.m */,
+				BB28A58607457DA5B24E35E8BC1D0208 /* SFComponentRouteProtocol.h */,
+			);
+			name = Component;
+			path = SFComponent/Component;
+			sourceTree = "<group>";
+		};
+		E926E38D16ACF3EB528F4D7960BA41E8 /* SFComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D6565FEA25AEC15EBA9CBF310BC4AC99 /* Component */,
+				472CA8C32C4A4738F759DD0E634D8B2C /* Configuration */,
+				301CB0D1AF3B0E181371F852E7DCFA7B /* Delegate */,
+				5768E037FA830D0DBC661B3A331DF5DD /* Event */,
+				A27F42DDA28E4C2689A97768BEFDCB8D /* Language */,
+				AA18744994A81BA09A2FA14E01CEDF23 /* Pod */,
+				24B8276316736399030A9EF23EA1E374 /* Resources */,
+				294EF5E110E1722FA410B71FCCB0538D /* Route */,
+				A728A739CEF0428596FBCB0D1231612B /* Skin */,
+				7EB92CC53CEBF930E222A2B10AA7DCBE /* Support Files */,
+			);
+			name = SFComponent;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DE91ADA96DD2EACBCBFBFA9A98121660 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFE5CCAE0F5793E5761F97D232B69A8 /* SFAppDelegate.h in Headers */,
+				DCED0D13C21671D15A5263A7F3B4E11A /* SFAppDelegateProtocol.h in Headers */,
+				2A2BDADA14B6816A43A0919C87EC9CCA /* SFBundle.h in Headers */,
+				C3AFBA466812ED0397B3DF8CE79E4B12 /* SFColor.h in Headers */,
+				D0C69C8D6FC784B56CD0F6FD6C73DBE3 /* SFComponent.h in Headers */,
+				AED608ECEEF83535C21DEBCE08ACE67F /* SFComponentEventProtocol.h in Headers */,
+				8AA838EDF358591C6339A18E3C0668A7 /* SFComponentLifeCycleProtocol.h in Headers */,
+				FB40BEDEDEA52E05063B41DD8380CE0E /* SFComponentManager.h in Headers */,
+				CCDF63D4F3B124378111C51DCD8E4648 /* SFComponentRouteProtocol.h in Headers */,
+				B422C5C3FBD5815DE19694BF416EE379 /* SFConfiguration.h in Headers */,
+				3C21594E61F8577053F82D6B1E667E3F /* SFEventCenter.h in Headers */,
+				FFC5528FEF4B3CC20206544A3A5F150C /* SFFont.h in Headers */,
+				99D87C16C297C939B65D05BD7DB57DC8 /* SFLanguage.h in Headers */,
+				CD031EC4CCDDF3C9A7E91ECC83118C4E /* SFRoute.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		39CEF932701E90FAF5873D1CE2EC21D4 /* SFComponent-SFComponentBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E04D71C78158374FDAAD4B94077456 /* Build configuration list for PBXNativeTarget "SFComponent-SFComponentBundle" */;
+			buildPhases = (
+				53343B4460CA9F02F476176DCA3D51F8 /* Sources */,
+				A9173DD51CEEBBFBD05427B0B9676414 /* Frameworks */,
+				5EAD9DED523E6D142D6E8F46799E53E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SFComponent-SFComponentBundle";
+			productName = "SFComponent-SFComponentBundle";
+			productReference = 78356BE28C44DF099D47A539D5C06065 /* SFComponentBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		71E8A52206E2B31ABCAABB36B43CC3F2 /* SFComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7ABF7C32015437C70E02E1BE3CA6463 /* Build configuration list for PBXNativeTarget "SFComponent" */;
+			buildPhases = (
+				18E7FB48FCB64989583CEE7A19CD06A5 /* Sources */,
+				0B9C7547BEDE5611FF64997D91BF6171 /* Frameworks */,
+				DE91ADA96DD2EACBCBFBFA9A98121660 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED7641AB19DCD1BA1BF6CD9DDC48B0E /* PBXTargetDependency */,
+			);
+			name = SFComponent;
+			productName = SFComponent;
+			productReference = B0165BA997BE6A44F9532D94F8EDFF13 /* libSFComponent.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8976133CD167708C3E825C5D9C5C8ED0 /* Pods-SFComponentDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7DEFE3B50957F459F82B62B9FF62A1 /* Build configuration list for PBXNativeTarget "Pods-SFComponentDemo" */;
+			buildPhases = (
+				16D605F40A1A2086BF0A901337B01AE3 /* Sources */,
+				9720C03EA67F3A20CC5EE9BD88571F3A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1981822CD1918DABEE89B278F99BE6 /* PBXTargetDependency */,
+			);
+			name = "Pods-SFComponentDemo";
+			productName = "Pods-SFComponentDemo";
+			productReference = 78AA631267CB9684DF48D03EE5B0230A /* libPods-SFComponentDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0FE483C23B9D8937394F0E834D5B5605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8976133CD167708C3E825C5D9C5C8ED0 /* Pods-SFComponentDemo */,
+				71E8A52206E2B31ABCAABB36B43CC3F2 /* SFComponent */,
+				39CEF932701E90FAF5873D1CE2EC21D4 /* SFComponent-SFComponentBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EAD9DED523E6D142D6E8F46799E53E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF118F838D9BAD31E41A40613E2591E /* Color.plist in Resources */,
+				6284FE801D0DC7762830F9C163AACDCC /* Font.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16D605F40A1A2086BF0A901337B01AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AE37365AA33E2E1FEC04F7A3E72302 /* Pods-SFComponentDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E7FB48FCB64989583CEE7A19CD06A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642333CBE000B89C1FDC7B4767A26901 /* SFAppDelegate.m in Sources */,
+				CA2D055F150B5C78B35CAC06452D9369 /* SFBundle.m in Sources */,
+				7490B9B2F762A4D7DA96C917596F2CD9 /* SFColor.m in Sources */,
+				7BC2F08014F56B6A7E0F53AEB219684C /* SFComponent-dummy.m in Sources */,
+				0F3BAAAC418622154030535799457328 /* SFComponent.m in Sources */,
+				138CEB1EBE484ACC453B179A1FFB9A55 /* SFComponentManager.m in Sources */,
+				36599E13595ECBEE5CADC1FE21DE2B29 /* SFConfiguration.m in Sources */,
+				87E4D053DAA1A109DA5F900E259DDE4B /* SFEventCenter.m in Sources */,
+				DEF0F8848B56E1CA91E2CEE17A0D087D /* SFFont.m in Sources */,
+				36DFC369E3FD8CD175D694B136C0EF79 /* SFLanguage.m in Sources */,
+				8C5F7090EE24EDF431F7A7171053D47C /* SFRoute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53343B4460CA9F02F476176DCA3D51F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A1981822CD1918DABEE89B278F99BE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFComponent;
+			target = 71E8A52206E2B31ABCAABB36B43CC3F2 /* SFComponent */;
+			targetProxy = 044A244D48582FDA210D2721FD740C9C /* PBXContainerItemProxy */;
+		};
+		FED7641AB19DCD1BA1BF6CD9DDC48B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SFComponent-SFComponentBundle";
+			target = 39CEF932701E90FAF5873D1CE2EC21D4 /* SFComponent-SFComponentBundle */;
+			targetProxy = 352E87DBB1BA9DBC11B08D4F8E3C351A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1505916223E5F11A994AED488B7A349E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B139A5F7D23A05EE57E255399EB9B0 /* SFComponent.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFComponent";
+				INFOPLIST_FILE = "Target Support Files/SFComponent/ResourceBundle-SFComponentBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = SFComponentBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2506C3608DAD43C3CBB254DFC48AC062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B139A5F7D23A05EE57E255399EB9B0 /* SFComponent.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SFComponent/SFComponent-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SFComponent;
+				PRODUCT_NAME = SFComponent;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		503C8EF4FFDE9D7FCB92C38FCDCFF421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B139A5F7D23A05EE57E255399EB9B0 /* SFComponent.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFComponent";
+				INFOPLIST_FILE = "Target Support Files/SFComponent/ResourceBundle-SFComponentBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = SFComponentBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		58B85BEE6F80AAAB915B1E1202A62DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C115D95F7AD27DEF746EC2B9B566671E /* Pods-SFComponentDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8B4954C207623775684D7BB10636E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B139A5F7D23A05EE57E255399EB9B0 /* SFComponent.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SFComponent/SFComponent-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SFComponent;
+				PRODUCT_NAME = SFComponent;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FF33C668A9D7E3A20E690F1BC549DC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443B1AF207F94C752FAD42DBF6705D5A /* Pods-SFComponentDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E04D71C78158374FDAAD4B94077456 /* Build configuration list for PBXNativeTarget "SFComponent-SFComponentBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503C8EF4FFDE9D7FCB92C38FCDCFF421 /* Debug */,
+				1505916223E5F11A994AED488B7A349E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7DEFE3B50957F459F82B62B9FF62A1 /* Build configuration list for PBXNativeTarget "Pods-SFComponentDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B85BEE6F80AAAB915B1E1202A62DE9 /* Debug */,
+				FF33C668A9D7E3A20E690F1BC549DC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7ABF7C32015437C70E02E1BE3CA6463 /* Build configuration list for PBXNativeTarget "SFComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2506C3608DAD43C3CBB254DFC48AC062 /* Debug */,
+				A8B4954C207623775684D7BB10636E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

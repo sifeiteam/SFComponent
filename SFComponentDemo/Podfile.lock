@@ -1,0 +1,16 @@
+PODS:
+  - SFComponent (0.0.1)
+
+DEPENDENCIES:
+  - SFComponent (from `../`)
+
+EXTERNAL SOURCES:
+  SFComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SFComponent: ee581f8d16d45fa6bdbb5f585660f7b75ea8751d
+
+PODFILE CHECKSUM: e7fe9a25e45c421369502c9738e121e2fef1000b
+
+COCOAPODS: 1.5.0
