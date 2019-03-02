@@ -9,6 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 国际化文件必须放在组件自己的Bundle->master->Localized下
+ */
 @interface SFLanguage : NSObject
 
 /**
