@@ -47,6 +47,10 @@
     
     NSString *text = [SFLanguage localizedStringWithKey:@"Text1" componentName:[SFComponent componentName]];
     
+    NSString *lan = [SFLanguage getCurrentLanguage];
+    
+    NSArray *all = [SFLanguage getAllLanguagesSupported];
+    
     int isdf = 0;
 }
 

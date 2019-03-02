@@ -20,6 +20,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)localizedStringWithKey:(NSString *)key componentName:(NSString *)componentName;
 
+/**
+ 获取当前语言
+
+ @return 语言
+ */
++ (NSString *)getCurrentLanguage;
+
+/**
+ 获取当前设备支持的所有语言
+
+ @return 语言列表
+ */
++ (NSArray<NSString *> *)getAllLanguagesSupported;
+
 @end
 
 NS_ASSUME_NONNULL_END

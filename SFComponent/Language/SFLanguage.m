@@ -22,9 +22,8 @@
         return nil;
     }
     
-    NSArray<NSString *> *languages = [[NSUserDefaults standardUserDefaults] arrayForKey:@"AppleLanguages"];
+    NSString *language = [self getCurrentLanguage];
     
-    NSString *language = [languages firstObject];
     if (!language || language.length == 0) {
         language = @"en";
     }
@@ -41,6 +40,16 @@
     }
 
     return NSLocalizedStringFromTableInBundle(key, @"Localizable", lprojBundle, @"");
+}
+
++ (NSString *)getCurrentLanguage {
+    NSArray<NSString *> *languages = [[NSUserDefaults standardUserDefaults] arrayForKey:@"AppleLanguages"];
+    
+    return [languages firstObject];
+}
+
++ (NSArray<NSString *> *)getAllLanguagesSupported {
+    return [NSLocale availableLocaleIdentifiers];
 }
 
 @end
