@@ -40,16 +40,16 @@
     NSString *imagePath = nil;
     if (scale < 2) {
         //1x
-        imagePath = [bundle pathForResource:name ofType:suffix];
+        imagePath = [bundle pathForResource:name ofType:suffix inDirectory:@"master/Image"];
     } else if (scale < 3) {
         //2x
-        imagePath = [bundle pathForResource:[name stringByAppendingString:@"@2x"] ofType:suffix];
+        imagePath = [bundle pathForResource:[name stringByAppendingString:@"@2x"] ofType:suffix inDirectory:@"master/Image"];
         if (!imagePath || imagePath.length == 0) {
             return [self imagePathWithScale:scale - 1 bundle:bundle name:name suffix:suffix];
         }
     } else {
         //3x
-        imagePath = [bundle pathForResource:[name stringByAppendingString:@"@3x"] ofType:suffix];
+        imagePath = [bundle pathForResource:[name stringByAppendingString:@"@3x"] ofType:suffix inDirectory:@"master/Image"];
         if (!imagePath || imagePath.length == 0) {
             return [self imagePathWithScale:scale - 1 bundle:bundle name:name suffix:suffix];
         }

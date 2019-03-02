@@ -31,7 +31,7 @@
     if (self) {
         NSBundle *bundle = [SFBundle bundleWithComponentName:[SFComponent componentName]];
         
-        NSString *colorPlistPath = [bundle pathForResource:@"Color" ofType:@"plist"];
+        NSString *colorPlistPath = [bundle pathForResource:@"Color" ofType:@"plist" inDirectory:@"master"];
         self.colors = [NSMutableDictionary dictionaryWithContentsOfFile:colorPlistPath];
     }
     return self;

@@ -31,7 +31,7 @@
     if (self) {
         NSBundle *bundle = [SFBundle bundleWithComponentName:[SFComponent componentName]];
         
-        NSString *fontPlistPath = [bundle pathForResource:@"Font" ofType:@"plist"];
+        NSString *fontPlistPath = [bundle pathForResource:@"Font" ofType:@"plist" inDirectory:@"master"];
         self.fonts = [NSMutableDictionary dictionaryWithContentsOfFile:fontPlistPath];
     }
     return self;
