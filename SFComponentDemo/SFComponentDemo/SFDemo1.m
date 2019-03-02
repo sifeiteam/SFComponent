@@ -9,7 +9,7 @@
 #import "SFDemo1.h"
 #import <SFComponent/SFInjection.h>
 
-@interface SFDemo1 () <SFInjectionDelegate>
+@interface SFDemo1 () <SFInjectionProtocol>
 
 @end
 
@@ -43,7 +43,7 @@
     completion(@"123");
 }
 
-#pragma mark - SFInjectionDelegate
+#pragma mark - SFInjectionProtocol
 
 - (void)observeWithIdentifier:(NSString *)identifier params:(NSDictionary *)params {
     int ii = 0;

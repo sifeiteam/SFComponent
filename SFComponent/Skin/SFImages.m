@@ -1,14 +1,14 @@
 //
-//  SFImage.m
+//  SFImages.m
 //  SFComponent
 //
 //  Created by XJY on 2019/2/24.
 //
 
-#import "SFImage.h"
+#import "SFImages.h"
 #import "SFBundle.h"
 
-@implementation SFImage
+@implementation SFImages
 
 + (UIImage *)imageWithName:(NSString *)imageName componentName:(NSString *)componentName {
     if (!imageName || imageName.length == 0) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56CC19CD222A965800A50935 /* SFTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19CC222A965800A50935 /* SFTestView.m */; };
 		56D408CC2222D97500D82EB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408CB2222D97500D82EB8 /* AppDelegate.m */; };
 		56D408CF2222D97500D82EB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408CE2222D97500D82EB8 /* ViewController.m */; };
 		56D408D22222D97500D82EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D408D02222D97500D82EB8 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		04F9318BB2C25A33C7DD1320 /* Pods-SFComponentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFComponentDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFComponentDemo/Pods-SFComponentDemo.release.xcconfig"; sourceTree = "<group>"; };
+		56CC19CB222A965800A50935 /* SFTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTestView.h; sourceTree = "<group>"; };
+		56CC19CC222A965800A50935 /* SFTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTestView.m; sourceTree = "<group>"; };
 		56D408C72222D97500D82EB8 /* SFComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D408CA2222D97500D82EB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56D408CB2222D97500D82EB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				56D408D92222D97700D82EB8 /* main.m */,
 				56D408FC2222DB9000D82EB8 /* SFDemo1.h */,
 				56D408FD2222DB9000D82EB8 /* SFDemo1.m */,
+				56CC19CB222A965800A50935 /* SFTestView.h */,
+				56CC19CC222A965800A50935 /* SFTestView.m */,
 			);
 			path = SFComponentDemo;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CC19CD222A965800A50935 /* SFTestView.m in Sources */,
 				56D408CF2222D97500D82EB8 /* ViewController.m in Sources */,
 				56D408DA2222D97700D82EB8 /* main.m in Sources */,
 				56D408CC2222D97500D82EB8 /* AppDelegate.m in Sources */,

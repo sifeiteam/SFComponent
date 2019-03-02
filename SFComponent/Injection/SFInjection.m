@@ -27,7 +27,7 @@
     return manager;
 }
 
-- (void)addDelegate:(id<SFInjectionDelegate>)delegate identifier:(nonnull NSString *)identifier {
+- (void)addDelegate:(id<SFInjectionProtocol>)delegate identifier:(nonnull NSString *)identifier {
     if (!delegate) {
         return;
     }
@@ -47,7 +47,7 @@
     }
 }
 
-- (void)removeDelegate:(id<SFInjectionDelegate>)delegate identifier:(nonnull NSString *)identifier {
+- (void)removeDelegate:(id<SFInjectionProtocol>)delegate identifier:(nonnull NSString *)identifier {
     if (!delegate) {
         return;
     }
@@ -98,7 +98,7 @@
         [items addObject:params];
         
         NSHashTable *delegates = [self.delegatesForIdentifier objectForKey:identifier];
-        for (id <SFInjectionDelegate> delegate in delegates) {
+        for (id <SFInjectionProtocol> delegate in delegates) {
             if (delegate && [delegate respondsToSelector:@selector(observeWithIdentifier:params:)]) {
                 [delegate observeWithIdentifier:identifier params:params];
             }

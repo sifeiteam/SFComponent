@@ -7,20 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SFInjectionProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@protocol SFInjectionDelegate <NSObject>
-
-/**
- 监听，外部注入时触发
- 
- @param identifier 唯一标识，业务自行定义
- @param params 参数信息
- */
-- (void)observeWithIdentifier:(NSString *)identifier params:(NSDictionary *)params;
-
-@end
 
 @interface SFInjection : NSObject
 
@@ -34,14 +23,14 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param delegate 代理
  */
-- (void)addDelegate:(id <SFInjectionDelegate>)delegate identifier:(NSString *)identifier;
+- (void)addDelegate:(id <SFInjectionProtocol>)delegate identifier:(NSString *)identifier;
 
 /**
  移除代理
  
  @param delegate 代理
  */
-- (void)removeDelegate:(id <SFInjectionDelegate>)delegate identifier:(NSString *)identifier;
+- (void)removeDelegate:(id <SFInjectionProtocol>)delegate identifier:(NSString *)identifier;
 
 /**
  移除所有代理

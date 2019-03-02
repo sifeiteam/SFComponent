@@ -1,18 +1,19 @@
 //
-//  SFImage.h
+//  SFImages.h
 //  SFComponent
 //
 //  Created by XJY on 2019/2/24.
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  图片必须放在组件自己的Bundle->master->Image下
  */
-@interface SFImage : NSObject
+@interface SFImages : NSObject
 
 /**
  获取图片

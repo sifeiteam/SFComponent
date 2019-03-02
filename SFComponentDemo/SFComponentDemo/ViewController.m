@@ -12,12 +12,15 @@
 #import "SFDemo1.h"
 #import <SFComponent/SFColors.h>
 #import <SFComponent/SFFont.h>
-#import <SFComponent/SFImage.h>
+#import <SFComponent/SFImages.h>
 #import <SFComponent/SFServerConfig.h>
 #import <SFComponent/SFLanguage.h>
 #import <SFComponent/SFInjection.h>
+#import <SFComponent/SFView.h>
 
-@interface ViewController ()
+@interface ViewController () <SFViewProtocol>
+
+@property (nonatomic, strong) SFView *testView;
 
 @end
 
@@ -42,7 +45,7 @@
     UIFont *font = SFFontWithNumber(2);
     
     
-    UIImage *image = [SFImage imageWithName:@"WX20190227-205248.png" componentName:[SFComponent componentName]];
+    UIImage *image = [SFImages imageWithName:@"WX20190227-205248.png" componentName:[SFComponent componentName]];
     
     NSString *serv = [SFServerConfig serverWithKey:@"SFCOMPONENT_HOST_TEST" componentName:[SFComponent componentName]];
     
@@ -55,8 +58,15 @@
     [[SFInjection sharedInstance] injectWithIdentifier:@"123" params:@{@"sdf":@"1234"}];
     
     NSArray *arr = [[SFInjection sharedInstance] fetchInjectionParamsWithIdentifier:@"123"];
-    int isdf = 0;
+    
+   self.testView = [SFView viewWithClassName:@"SFTestView" context:@{@"sdfs":@"fefew"}];
+    self.testView.delegate = self;
+    
+    [self.testView sendMessageFromCallerToView:@{@"bbb" : @"0000"} key:@"abc"];
 }
 
+- (void)view:(SFView *)view key:(NSString *)key message:(NSDictionary *)message {
+    int i = 0;
+}
 
 @end
