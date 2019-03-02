@@ -8,12 +8,21 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define SFFontWithKey(key) [[SFFont sharedInstance] fontWithKey:key]
+#define SFFontWithNumber(number) [[SFFont sharedInstance] fontWithNumber:number]
 
 @interface SFFont : NSObject
 
+/**
+ 单例
+ */
 + (instancetype)sharedInstance;
 
-- (UIFont *)fontWithKey:(NSString *)key;
+/**
+ 获取字体
+
+ @param number 字体编号
+ @return 字体
+ */
+- (UIFont *)fontWithNumber:(NSInteger)number;
 
 @end

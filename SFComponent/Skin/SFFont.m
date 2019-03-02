@@ -37,10 +37,12 @@
     return self;
 }
 
-- (UIFont *)fontWithKey:(NSString *)key {
+- (UIFont *)fontWithNumber:(NSInteger)number {
+    NSString *key = @(number).stringValue;
     if (!key || key.length == 0) {
         return nil;
     }
+    
     NSString *fontName = [self.fonts objectForKey:@"font"];
     CGFloat size = [[self.fonts objectForKey:key] floatValue];
     if (fontName && fontName.length > 0) {

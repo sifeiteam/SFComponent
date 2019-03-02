@@ -10,8 +10,9 @@
 #import <SFComponent/SFRoute.h>
 #import <SFComponent/SFEventCenter.h>
 #import "SFDemo1.h"
-#import <SFComponent/SFColorManager.h>
+#import <SFComponent/SFColors.h>
 #import <SFComponent/SFFont.h>
+#import <SFComponent/SFImage.h>
 
 @interface ViewController ()
 
@@ -32,10 +33,14 @@
         int iii = 0;
     }];
     
-    UIColor *color = SFColorWithKey(@"1");
+    UIColor *color = SFColorWithNumber(1);
     
     
-    UIFont *font = SFFontWithKey(@"2");
+    UIFont *font = SFFontWithNumber(2);
+    
+    
+    UIImage *image = [SFImage imageWithName:@"WX20190227-205248.png" componentName:[SFComponent componentName]];
+    
     int isdf = 0;
 }
 
