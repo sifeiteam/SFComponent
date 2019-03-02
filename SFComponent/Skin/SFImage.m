@@ -7,7 +7,6 @@
 
 #import "SFImage.h"
 #import "SFBundle.h"
-#import "SFComponent.h"
 
 @implementation SFImage
 

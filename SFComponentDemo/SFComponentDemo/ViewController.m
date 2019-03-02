@@ -13,6 +13,7 @@
 #import <SFComponent/SFColors.h>
 #import <SFComponent/SFFont.h>
 #import <SFComponent/SFImage.h>
+#import <SFComponent/SFServerConfig.h>
 
 @interface ViewController ()
 
@@ -40,6 +41,8 @@
     
     
     UIImage *image = [SFImage imageWithName:@"WX20190227-205248.png" componentName:[SFComponent componentName]];
+    
+    NSString *serv = [SFServerConfig serverWithKey:@"SFCOMPONENT_HOST_TEST" componentName:[SFComponent componentName]];
     
     int isdf = 0;
 }

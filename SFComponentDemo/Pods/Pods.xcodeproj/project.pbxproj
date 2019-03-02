@@ -7,37 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02330D17AE6EB3399E6DACA41BD636A6 /* SFAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1771E12C47B9E96FAA9B3D483F55D582 /* SFAppDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0724DF96C5BE0B41DC42347520461D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0F45558E39E87E30EC1F548A271653FF /* SFComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F90BC03F3809E0CF31F7660AB0F6E931 /* SFComponentManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		191C1D07D9AE34FD7330539818C90E53 /* SFLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D00924B9620E6C07CECD42356CC1AB5 /* SFLanguage.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1AE7A6254F1FCAAA9754BC1A4FC8B9D3 /* SFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8519C5C6F336135ACF4B9B0802B4D8EE /* SFImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		207169F1D2D9F0CB4B236F6DA19B12A9 /* SFFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 472F44BAACDC9A919B0BCBE86AFCF995 /* SFFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2855BA690F0176C0F4A7DD6C103CFF3B /* master in Resources */ = {isa = PBXBuildFile; fileRef = 9E187EF06F4FA66DBAABE9C41D6EA33D /* master */; };
-		2CDF851F1BFA7660E516FDD2F7036A28 /* SFRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7F16E92B6821D1B87F825F97538A99 /* SFRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4CBC78D90F1AC2E3AD695683DB3D1F3A /* SFConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D74D0E464A89373F5360325C25B4754 /* SFConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		63BB73E595DD9D1D67A68FA16462DDD1 /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F84D63F9D855586AFD21449C70FC7EC2 /* SFComponent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6C34A9C7AA9F8E6B08E8B10E919854FE /* SFComponentEventProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FE42ACE1B243688B6E9F16E147937D48 /* SFComponentEventProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6E1128077C16FC74558A71F6E66C4CB3 /* SFComponentRouteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AACC5499D96AD66DA13D0F6D5D9C6B6 /* SFComponentRouteProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6EB56B060D3883D9F9A4C7C8F39E2312 /* SFAppDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7978E2402ACD6CE36EA5C14C1B38B44C /* SFAppDelegateProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		77BC6C71F0FCC7307A290C3F0AE64492 /* SFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 527720CE9B57F804FE9883E780AA1B6C /* SFBundle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7A21E4A1DE54CA9E58D9353B3A6F518A /* SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE45C952C79F0C4DEE658640967F7BC /* SFImage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7B337C4767C1DB534AAB9EE82CC9BD72 /* SFComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09960288CD99D4496CB2E7E0A98A4427 /* SFComponent-dummy.m */; };
-		7B516DBBEC506B1BF92DCC455FF6A66B /* SFFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 820C20E25ADE0CFE4EBEA0629E9B41DB /* SFFont.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		89C3D21AA235C04E1DF4874F404C8733 /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B307EA3476C61FF12F1E0E653F1D32 /* SFLanguage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		08EBB4E8F06834A0694A1DBD52FE2BB1 /* SFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2E8D59F65C541AB0BEB7E50375E543 /* SFImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		121D8D14C24FEFB4A506E6BAFD69A807 /* SFServerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AB48DCDC424554F287F420E3DAAA0949 /* SFServerConfig.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1A25072238A8D6E47D1279D8EE8D9C18 /* SFComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A93C1140EE3136B42C1C513E6A697BB4 /* SFComponentManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C19F6F1D7C959826D3A56424A635CDB /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 525A519BF6152BB178DDF8BE1E0B8EAC /* SFConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		200C112EA88A678B33A3ADB44A543765 /* SFComponentLifeCycleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AA201B777513827E8848764EC6751957 /* SFComponentLifeCycleProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2855BA690F0176C0F4A7DD6C103CFF3B /* master in Resources */ = {isa = PBXBuildFile; fileRef = 0250464A736A0A8C736EF6C99DB037BD /* master */; };
+		4FA7C760D48213252D622FA4A6726EC8 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FBFDD36A90DC8990165C2E8ABB503 /* SFAppDelegate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66A09E910DE6D9E18F414C5E9E355780 /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE2C7595D35282B6B5D07D226DAE59 /* SFRoute.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		691100A00703EC725871A1612CAF72DC /* SFServerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C69136424B9BA151DBF218890C53C2 /* SFServerConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69BFEF358EC1F23D63316E366C6C3324 /* SFConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD95499616F91D12F5B38E31CD112FB /* SFConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8236474710B285DF603E6129EC1C6D27 /* SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA618D2B7B06312A8415C3E3B785F4B0 /* SFImage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A476B7EA23F72DADFE03FAB44F06FC2 /* SFColors.h in Headers */ = {isa = PBXBuildFile; fileRef = DB81569CDA4C01572A5AB11CEC436909 /* SFColors.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8D3AE5DF07A30CA1493913EF7B317286 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		916D91FDC23DA5584A3126659C481FC9 /* SFComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39B98A5A2F385C384B3920EC2075E2 /* SFComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A482CDFD9656A477A0D0BBC1250AF810 /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8DC718A2739C79C4506656D26EE44E /* SFEventCenter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A4C18AD053D4FF1171B6153D09ED3975 /* SFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7245C18815DAB7E080EB616688019025 /* SFColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C251CED0A6FA6384F78E6FE7370A5588 /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA13FA7E58C7CD34943EA1E69B80A28 /* SFRoute.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C3E28EF8CB9EDC2D191F5F207AF49D11 /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D64BCC689CD72A052DA435572EFAD7 /* SFConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C4F6BA439C3458EC49DB4813BE86842A /* SFBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4856B8F6A3E3E92E8554C242D96D5EFA /* SFBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D1D832FC4679EF67ADFDEEE73DA182FB /* SFEventCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D008786D6D5068962DBA0BAE8573D06 /* SFEventCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D6EF85166AE27349CE112D1E2C2DFA24 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03931F6CA84F9F3EDE35A3FC8E38AFA2 /* SFAppDelegate.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F18D5BAD45019FEAC5507F1270434B8 /* SFComponentEventProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8EBAA1C2A68D32379A125A8B21A113 /* SFComponentEventProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DBBF9BBAEF6B88143C0C6A6910B14AF /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FE273B4FFA2ED4A328A8F8DEC736D /* SFLanguage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A30586E450F1082B109B38A13E76A4D9 /* SFAppDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF6474BFAAFF195333262D124491E45 /* SFAppDelegateProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A565FE1707B893D7550D28C388F1B5ED /* SFComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9161A116F460022384315F4385953C72 /* SFComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7857D61E56899A746BA016C6E21E0EA /* SFLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F0DBB62ED182250849BDE3A645F441 /* SFLanguage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8D648988F9BB13F9832CC4D2A719C85 /* SFFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9D9F9154AB7DD992C565725C6AC58F /* SFFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC9A24D0BB4B87BCAF7E4E77B1B5302B /* SFComponentRouteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EC281C30F33C07F26AD271688398A389 /* SFComponentRouteProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6DE0C86D96771EE96E9C3FB8CBC77D6 /* SFAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BA919AE01CEC20C10E5409307D97703B /* SFAppDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BCFD50C180030A83CD27F8F2DE37DEDA /* SFRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C41C1FA4D0AFB742112459269477AF /* SFRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BDC28AA3078A507A9C22BEBB5DB1473A /* SFBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E80C9DB7738CA8D28ACB8DB16CEE51 /* SFBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE1AAEA7C45E8712B0FC2A63E78E6456 /* SFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2583ADE52685C1CB165C2BA2F95F2175 /* SFBundle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE5BC2A5C62F8CCD9B4972FCA385A55C /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B25A2F330E2F5AE21FB5BB1503435 /* SFComponentManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3151AD3C5617EF442E43FF6E9CBB634 /* SFEventCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = C230B6690F11CF0F93FFA8096D043015 /* SFEventCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB273700DD8A0BF2ECCADA5D37F9A6BC /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 108817CFAB730213FD5E32C8A3C106CF /* SFComponent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D78A5EBF882B6BA4C3CD57E245E87804 /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5699777A49BD40E1F5AC8C77DEB0B /* SFEventCenter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DCA45A4DA3A4B9E75632578F70897A1F /* SFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7273B9C8F3539A2302FA13A46754CBAA /* SFColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DCC2CE4CCAE39EA81C861DDEB7082570 /* SFFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 2351DEF609EDB18B0D44185C7CC0F308 /* SFFont.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E1AE37365AA33E2E1FEC04F7A3E72302 /* Pods-SFComponentDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87A444FD7BF93540A83001B1E7795F /* Pods-SFComponentDemo-dummy.m */; };
-		E7498698BEA88ABD7CE2B95805E70A46 /* SFComponentLifeCycleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 479A9D9C9224B05C430FD01E08707B70 /* SFComponentLifeCycleProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F161753DD2411402672FF2A08A90F491 /* SFColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1207517515D0C3C6A03E472C9E97CC7D /* SFColors.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F8012495150C3CF20066E67C3747E054 /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 152ABA907F9FA137B7B23EF0D1B6BB54 /* SFComponentManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F870D77EF482AEE89585726CEA10D410 /* SFComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 161CD6D4E74C8C0A7F77841A4A1EA11E /* SFComponent-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,52 +60,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009FCD34D9828A5249DAB66A88E2B0B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		03931F6CA84F9F3EDE35A3FC8E38AFA2 /* SFAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
-		09960288CD99D4496CB2E7E0A98A4427 /* SFComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFComponent-dummy.m"; sourceTree = "<group>"; };
-		0D7F16E92B6821D1B87F825F97538A99 /* SFRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
-		1207517515D0C3C6A03E472C9E97CC7D /* SFColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFColors.h; sourceTree = "<group>"; };
-		152ABA907F9FA137B7B23EF0D1B6BB54 /* SFComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
-		1771E12C47B9E96FAA9B3D483F55D582 /* SFAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
-		1D008786D6D5068962DBA0BAE8573D06 /* SFEventCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFEventCenter.h; sourceTree = "<group>"; };
+		0250464A736A0A8C736EF6C99DB037BD /* master */ = {isa = PBXFileReference; includeInIndex = 1; name = master; path = SFComponentBundle/master; sourceTree = "<group>"; };
+		108817CFAB730213FD5E32C8A3C106CF /* SFComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFComponent.m; sourceTree = "<group>"; };
+		161CD6D4E74C8C0A7F77841A4A1EA11E /* SFComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFComponent-dummy.m"; sourceTree = "<group>"; };
+		2351DEF609EDB18B0D44185C7CC0F308 /* SFFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFFont.m; sourceTree = "<group>"; };
+		2583ADE52685C1CB165C2BA2F95F2175 /* SFBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBundle.m; sourceTree = "<group>"; };
+		2E8FE273B4FFA2ED4A328A8F8DEC736D /* SFLanguage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
+		30F0DBB62ED182250849BDE3A645F441 /* SFLanguage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFLanguage.h; sourceTree = "<group>"; };
 		399D339C419136C2FA9D52C21FEB0A5A /* Pods-SFComponentDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFComponentDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		3F6EA08274178716D463AE9DB189C3FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		443B1AF207F94C752FAD42DBF6705D5A /* Pods-SFComponentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFComponentDemo.release.xcconfig"; sourceTree = "<group>"; };
-		472F44BAACDC9A919B0BCBE86AFCF995 /* SFFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFFont.h; sourceTree = "<group>"; };
-		479A9D9C9224B05C430FD01E08707B70 /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
-		4856B8F6A3E3E92E8554C242D96D5EFA /* SFBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBundle.h; sourceTree = "<group>"; };
-		4BE45C952C79F0C4DEE658640967F7BC /* SFImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFImage.m; sourceTree = "<group>"; };
-		50EF602B4AADC8FF4E6F8958FD729A3E /* ResourceBundle-SFComponentBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SFComponentBundle-Info.plist"; sourceTree = "<group>"; };
-		527720CE9B57F804FE9883E780AA1B6C /* SFBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFBundle.m; sourceTree = "<group>"; };
-		5B6B5B3393885164E78368177B6F376C /* SFComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SFComponent.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5D74D0E464A89373F5360325C25B4754 /* SFConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFConfiguration.h; sourceTree = "<group>"; };
-		5F39B98A5A2F385C384B3920EC2075E2 /* SFComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
+		525A519BF6152BB178DDF8BE1E0B8EAC /* SFConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFConfiguration.m; sourceTree = "<group>"; };
+		558B25A2F330E2F5AE21FB5BB1503435 /* SFComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
+		5D2E8D59F65C541AB0BEB7E50375E543 /* SFImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFImage.h; sourceTree = "<group>"; };
+		64BD6D64BF2739B2BC629532E75BA77A /* SFComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SFComponent.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7245C18815DAB7E080EB616688019025 /* SFColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFColors.m; sourceTree = "<group>"; };
+		6B8EBAA1C2A68D32379A125A8B21A113 /* SFComponentEventProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentEventProtocol.h; sourceTree = "<group>"; };
+		6C9D9F9154AB7DD992C565725C6AC58F /* SFFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFFont.h; sourceTree = "<group>"; };
+		6CF6474BFAAFF195333262D124491E45 /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
+		7273B9C8F3539A2302FA13A46754CBAA /* SFColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFColors.m; sourceTree = "<group>"; };
+		77C69136424B9BA151DBF218890C53C2 /* SFServerConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFServerConfig.h; sourceTree = "<group>"; };
 		78356BE28C44DF099D47A539D5C06065 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SFComponentBundle.bundle; path = "SFComponent-SFComponentBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA631267CB9684DF48D03EE5B0230A /* libPods-SFComponentDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SFComponentDemo.a"; path = "libPods-SFComponentDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7978E2402ACD6CE36EA5C14C1B38B44C /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
-		80B307EA3476C61FF12F1E0E653F1D32 /* SFLanguage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
-		820C20E25ADE0CFE4EBEA0629E9B41DB /* SFFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFFont.m; sourceTree = "<group>"; };
-		8519C5C6F336135ACF4B9B0802B4D8EE /* SFImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFImage.h; sourceTree = "<group>"; };
+		842FBFDD36A90DC8990165C2E8ABB503 /* SFAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		86E80C9DB7738CA8D28ACB8DB16CEE51 /* SFBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFBundle.h; sourceTree = "<group>"; };
+		9161A116F460022384315F4385953C72 /* SFComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9AACC5499D96AD66DA13D0F6D5D9C6B6 /* SFComponentRouteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentRouteProtocol.h; sourceTree = "<group>"; };
-		9D00924B9620E6C07CECD42356CC1AB5 /* SFLanguage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFLanguage.h; sourceTree = "<group>"; };
-		9E187EF06F4FA66DBAABE9C41D6EA33D /* master */ = {isa = PBXFileReference; includeInIndex = 1; name = master; path = SFComponentBundle/master; sourceTree = "<group>"; };
-		ADE0AB5638287EC46023E1EB946EECDB /* SFComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFComponent-prefix.pch"; sourceTree = "<group>"; };
+		9A2AB348704E0925CAA448B1CEB251F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A93C1140EE3136B42C1C513E6A697BB4 /* SFComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentManager.h; sourceTree = "<group>"; };
+		AA201B777513827E8848764EC6751957 /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
+		AB48DCDC424554F287F420E3DAAA0949 /* SFServerConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFServerConfig.m; sourceTree = "<group>"; };
 		B0165BA997BE6A44F9532D94F8EDFF13 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSFComponent.a; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3197EA66A54AAF53C670F3D8164872C /* ResourceBundle-SFComponentBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SFComponentBundle-Info.plist"; sourceTree = "<group>"; };
 		B6A8AE1DCA0311CF698141E63122573E /* Pods-SFComponentDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFComponentDemo-resources.sh"; sourceTree = "<group>"; };
+		BA919AE01CEC20C10E5409307D97703B /* SFAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
 		BF87A444FD7BF93540A83001B1E7795F /* Pods-SFComponentDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFComponentDemo-dummy.m"; sourceTree = "<group>"; };
 		C115D95F7AD27DEF746EC2B9B566671E /* Pods-SFComponentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFComponentDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C230B6690F11CF0F93FFA8096D043015 /* SFEventCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFEventCenter.h; sourceTree = "<group>"; };
 		C34E85E6100585AC16700A743EAD545F /* Pods-SFComponentDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFComponentDemo-frameworks.sh"; sourceTree = "<group>"; };
-		D5602FA3CAF386D14E2D8C89DD7AFFBA /* SFComponent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFComponent.xcconfig; sourceTree = "<group>"; };
-		DEA13FA7E58C7CD34943EA1E69B80A28 /* SFRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
-		E2D64BCC689CD72A052DA435572EFAD7 /* SFConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFConfiguration.m; sourceTree = "<group>"; };
+		DB81569CDA4C01572A5AB11CEC436909 /* SFColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFColors.h; sourceTree = "<group>"; };
+		E55391112CCEBD9A2A77130FAC992C38 /* SFComponent.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFComponent.xcconfig; sourceTree = "<group>"; };
+		E5B81B88C0F478211972D6E63BED692E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EA618D2B7B06312A8415C3E3B785F4B0 /* SFImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFImage.m; sourceTree = "<group>"; };
+		EBDE2C7595D35282B6B5D07D226DAE59 /* SFRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
+		EC281C30F33C07F26AD271688398A389 /* SFComponentRouteProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentRouteProtocol.h; sourceTree = "<group>"; };
+		EC49C1D29538CE058E286E2607AC37FB /* SFComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFComponent-prefix.pch"; sourceTree = "<group>"; };
 		EE07F2C171B6597E1EFD664FDCCFD609 /* Pods-SFComponentDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFComponentDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EE8DC718A2739C79C4506656D26EE44E /* SFEventCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFEventCenter.m; sourceTree = "<group>"; };
-		F84D63F9D855586AFD21449C70FC7EC2 /* SFComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFComponent.m; sourceTree = "<group>"; };
-		F90BC03F3809E0CF31F7660AB0F6E931 /* SFComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentManager.h; sourceTree = "<group>"; };
-		FE42ACE1B243688B6E9F16E147937D48 /* SFComponentEventProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFComponentEventProtocol.h; sourceTree = "<group>"; };
+		F7C41C1FA4D0AFB742112459269477AF /* SFRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
+		F8B5699777A49BD40E1F5AC8C77DEB0B /* SFEventCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SFEventCenter.m; sourceTree = "<group>"; };
+		FFD95499616F91D12F5B38E31CD112FB /* SFConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SFConfiguration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,26 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		021DE97C725DAB5B5C7FB4AC697E2177 /* Language */ = {
-			isa = PBXGroup;
-			children = (
-				9D00924B9620E6C07CECD42356CC1AB5 /* SFLanguage.h */,
-				80B307EA3476C61FF12F1E0E653F1D32 /* SFLanguage.m */,
-			);
-			name = Language;
-			path = SFComponent/Language;
-			sourceTree = "<group>";
-		};
-		0BC8181A058361CB2B96A36264C46308 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				009FCD34D9828A5249DAB66A88E2B0B8 /* LICENSE */,
-				3F6EA08274178716D463AE9DB189C3FF /* README.md */,
-				5B6B5B3393885164E78368177B6F376C /* SFComponent.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		0FE483C23B9D8937394F0E834D5B5605 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,50 +147,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1547FB9B9E99E58AF5093489536B2C08 /* Delegate */ = {
+		256EBB0D5BEC208E63ED701E0928C291 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				1771E12C47B9E96FAA9B3D483F55D582 /* SFAppDelegate.h */,
-				03931F6CA84F9F3EDE35A3FC8E38AFA2 /* SFAppDelegate.m */,
-				7978E2402ACD6CE36EA5C14C1B38B44C /* SFAppDelegateProtocol.h */,
-			);
-			name = Delegate;
-			path = SFComponent/Delegate;
-			sourceTree = "<group>";
-		};
-		2F2D5FACA3032E61970BBE0E61384443 /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				1D008786D6D5068962DBA0BAE8573D06 /* SFEventCenter.h */,
-				EE8DC718A2739C79C4506656D26EE44E /* SFEventCenter.m */,
-			);
-			name = Event;
-			path = SFComponent/Event;
-			sourceTree = "<group>";
-		};
-		326A9D2E4FB5F9B39AC6836801301AE7 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				5F39B98A5A2F385C384B3920EC2075E2 /* SFComponent.h */,
-				F84D63F9D855586AFD21449C70FC7EC2 /* SFComponent.m */,
-				FE42ACE1B243688B6E9F16E147937D48 /* SFComponentEventProtocol.h */,
-				479A9D9C9224B05C430FD01E08707B70 /* SFComponentLifeCycleProtocol.h */,
-				F90BC03F3809E0CF31F7660AB0F6E931 /* SFComponentManager.h */,
-				152ABA907F9FA137B7B23EF0D1B6BB54 /* SFComponentManager.m */,
-				9AACC5499D96AD66DA13D0F6D5D9C6B6 /* SFComponentRouteProtocol.h */,
+				9161A116F460022384315F4385953C72 /* SFComponent.h */,
+				108817CFAB730213FD5E32C8A3C106CF /* SFComponent.m */,
+				6B8EBAA1C2A68D32379A125A8B21A113 /* SFComponentEventProtocol.h */,
+				AA201B777513827E8848764EC6751957 /* SFComponentLifeCycleProtocol.h */,
+				A93C1140EE3136B42C1C513E6A697BB4 /* SFComponentManager.h */,
+				558B25A2F330E2F5AE21FB5BB1503435 /* SFComponentManager.m */,
+				EC281C30F33C07F26AD271688398A389 /* SFComponentRouteProtocol.h */,
 			);
 			name = Component;
 			path = SFComponent/Component;
 			sourceTree = "<group>";
 		};
-		3C44EE39C6C01C3BF6E1EFC38CAD9B44 /* Configuration */ = {
+		2F1224E24296B8AC41465D9AA0C94AFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5D74D0E464A89373F5360325C25B4754 /* SFConfiguration.h */,
-				E2D64BCC689CD72A052DA435572EFAD7 /* SFConfiguration.m */,
+				0250464A736A0A8C736EF6C99DB037BD /* master */,
 			);
-			name = Configuration;
-			path = SFComponent/Configuration;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B1BA7F2FDA89794CADB040C7F7DC7D2 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				86E80C9DB7738CA8D28ACB8DB16CEE51 /* SFBundle.h */,
+				2583ADE52685C1CB165C2BA2F95F2175 /* SFBundle.m */,
+				DB81569CDA4C01572A5AB11CEC436909 /* SFColors.h */,
+				7273B9C8F3539A2302FA13A46754CBAA /* SFColors.m */,
+				6C9D9F9154AB7DD992C565725C6AC58F /* SFFont.h */,
+				2351DEF609EDB18B0D44185C7CC0F308 /* SFFont.m */,
+				5D2E8D59F65C541AB0BEB7E50375E543 /* SFImage.h */,
+				EA618D2B7B06312A8415C3E3B785F4B0 /* SFImage.m */,
+			);
+			name = Skin;
+			path = SFComponent/Skin;
+			sourceTree = "<group>";
+		};
+		732633F782CCB9C96013669788F34469 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3197EA66A54AAF53C670F3D8164872C /* ResourceBundle-SFComponentBundle-Info.plist */,
+				E55391112CCEBD9A2A77130FAC992C38 /* SFComponent.xcconfig */,
+				161CD6D4E74C8C0A7F77841A4A1EA11E /* SFComponent-dummy.m */,
+				EC49C1D29538CE058E286E2607AC37FB /* SFComponent-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "SFComponentDemo/Pods/Target Support Files/SFComponent";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -220,46 +209,33 @@
 			);
 			sourceTree = "<group>";
 		};
-		9FB1BE91C8D31A5DD4FCD7B4C6349331 /* Skin */ = {
+		A2B62AD1A438C458110BEE50C4A6825E /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				4856B8F6A3E3E92E8554C242D96D5EFA /* SFBundle.h */,
-				527720CE9B57F804FE9883E780AA1B6C /* SFBundle.m */,
-				1207517515D0C3C6A03E472C9E97CC7D /* SFColors.h */,
-				7245C18815DAB7E080EB616688019025 /* SFColors.m */,
-				472F44BAACDC9A919B0BCBE86AFCF995 /* SFFont.h */,
-				820C20E25ADE0CFE4EBEA0629E9B41DB /* SFFont.m */,
-				8519C5C6F336135ACF4B9B0802B4D8EE /* SFImage.h */,
-				4BE45C952C79F0C4DEE658640967F7BC /* SFImage.m */,
+				BA919AE01CEC20C10E5409307D97703B /* SFAppDelegate.h */,
+				842FBFDD36A90DC8990165C2E8ABB503 /* SFAppDelegate.m */,
+				6CF6474BFAAFF195333262D124491E45 /* SFAppDelegateProtocol.h */,
 			);
-			name = Skin;
-			path = SFComponent/Skin;
+			name = Delegate;
+			path = SFComponent/Delegate;
+			sourceTree = "<group>";
+		};
+		B2885638A1437FCCD897C1C947C63D15 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				30F0DBB62ED182250849BDE3A645F441 /* SFLanguage.h */,
+				2E8FE273B4FFA2ED4A328A8F8DEC736D /* SFLanguage.m */,
+			);
+			name = Language;
+			path = SFComponent/Language;
 			sourceTree = "<group>";
 		};
 		B648420A409FC43DCF162029118D67AB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BB9A57A20F88F7FB83357F5EAEDB3338 /* SFComponent */,
+				E6353332AB0C3059A10D9DC7F018A194 /* SFComponent */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BB9A57A20F88F7FB83357F5EAEDB3338 /* SFComponent */ = {
-			isa = PBXGroup;
-			children = (
-				326A9D2E4FB5F9B39AC6836801301AE7 /* Component */,
-				3C44EE39C6C01C3BF6E1EFC38CAD9B44 /* Configuration */,
-				1547FB9B9E99E58AF5093489536B2C08 /* Delegate */,
-				2F2D5FACA3032E61970BBE0E61384443 /* Event */,
-				021DE97C725DAB5B5C7FB4AC697E2177 /* Language */,
-				0BC8181A058361CB2B96A36264C46308 /* Pod */,
-				C8136B4B832F70E85185CE1FD92C252F /* Resources */,
-				C7FE5D068010BE8A0EEEE03C2732F603 /* Route */,
-				9FB1BE91C8D31A5DD4FCD7B4C6349331 /* Skin */,
-				C8FBF2DB8E203CFD5B21BADD70013F2D /* Support Files */,
-			);
-			name = SFComponent;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -270,34 +246,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7FE5D068010BE8A0EEEE03C2732F603 /* Route */ = {
+		BF5EDE4D94BB8406E058A59B9B22502A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				0D7F16E92B6821D1B87F825F97538A99 /* SFRoute.h */,
-				DEA13FA7E58C7CD34943EA1E69B80A28 /* SFRoute.m */,
+				FFD95499616F91D12F5B38E31CD112FB /* SFConfiguration.h */,
+				525A519BF6152BB178DDF8BE1E0B8EAC /* SFConfiguration.m */,
+				77C69136424B9BA151DBF218890C53C2 /* SFServerConfig.h */,
+				AB48DCDC424554F287F420E3DAAA0949 /* SFServerConfig.m */,
 			);
-			name = Route;
-			path = SFComponent/Route;
-			sourceTree = "<group>";
-		};
-		C8136B4B832F70E85185CE1FD92C252F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9E187EF06F4FA66DBAABE9C41D6EA33D /* master */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C8FBF2DB8E203CFD5B21BADD70013F2D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				50EF602B4AADC8FF4E6F8958FD729A3E /* ResourceBundle-SFComponentBundle-Info.plist */,
-				D5602FA3CAF386D14E2D8C89DD7AFFBA /* SFComponent.xcconfig */,
-				09960288CD99D4496CB2E7E0A98A4427 /* SFComponent-dummy.m */,
-				ADE0AB5638287EC46023E1EB946EECDB /* SFComponent-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "SFComponentDemo/Pods/Target Support Files/SFComponent";
+			name = Configuration;
+			path = SFComponent/Configuration;
 			sourceTree = "<group>";
 		};
 		CC6B5A62291F5B5734A389D68CAF7C75 /* Targets Support Files */ = {
@@ -331,28 +289,77 @@
 			path = "Target Support Files/Pods-SFComponentDemo";
 			sourceTree = "<group>";
 		};
+		E6353332AB0C3059A10D9DC7F018A194 /* SFComponent */ = {
+			isa = PBXGroup;
+			children = (
+				256EBB0D5BEC208E63ED701E0928C291 /* Component */,
+				BF5EDE4D94BB8406E058A59B9B22502A /* Configuration */,
+				A2B62AD1A438C458110BEE50C4A6825E /* Delegate */,
+				E8C8052922DCE380DB454711EBD5052E /* Event */,
+				B2885638A1437FCCD897C1C947C63D15 /* Language */,
+				F0AE17ECCFD2EC9953D40CDE8BF91311 /* Pod */,
+				2F1224E24296B8AC41465D9AA0C94AFC /* Resources */,
+				EEDD6A54C5743CEECE75B311ACAE1005 /* Route */,
+				3B1BA7F2FDA89794CADB040C7F7DC7D2 /* Skin */,
+				732633F782CCB9C96013669788F34469 /* Support Files */,
+			);
+			name = SFComponent;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E8C8052922DCE380DB454711EBD5052E /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				C230B6690F11CF0F93FFA8096D043015 /* SFEventCenter.h */,
+				F8B5699777A49BD40E1F5AC8C77DEB0B /* SFEventCenter.m */,
+			);
+			name = Event;
+			path = SFComponent/Event;
+			sourceTree = "<group>";
+		};
+		EEDD6A54C5743CEECE75B311ACAE1005 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				F7C41C1FA4D0AFB742112459269477AF /* SFRoute.h */,
+				EBDE2C7595D35282B6B5D07D226DAE59 /* SFRoute.m */,
+			);
+			name = Route;
+			path = SFComponent/Route;
+			sourceTree = "<group>";
+		};
+		F0AE17ECCFD2EC9953D40CDE8BF91311 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9A2AB348704E0925CAA448B1CEB251F5 /* LICENSE */,
+				E5B81B88C0F478211972D6E63BED692E /* README.md */,
+				64BD6D64BF2739B2BC629532E75BA77A /* SFComponent.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B13260BF72C5AF413AA886B69CFBD65C /* Headers */ = {
+		67E99D2977A5910A4B375B95301BFD77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02330D17AE6EB3399E6DACA41BD636A6 /* SFAppDelegate.h in Headers */,
-				6EB56B060D3883D9F9A4C7C8F39E2312 /* SFAppDelegateProtocol.h in Headers */,
-				C4F6BA439C3458EC49DB4813BE86842A /* SFBundle.h in Headers */,
-				F161753DD2411402672FF2A08A90F491 /* SFColors.h in Headers */,
-				916D91FDC23DA5584A3126659C481FC9 /* SFComponent.h in Headers */,
-				6C34A9C7AA9F8E6B08E8B10E919854FE /* SFComponentEventProtocol.h in Headers */,
-				E7498698BEA88ABD7CE2B95805E70A46 /* SFComponentLifeCycleProtocol.h in Headers */,
-				0F45558E39E87E30EC1F548A271653FF /* SFComponentManager.h in Headers */,
-				6E1128077C16FC74558A71F6E66C4CB3 /* SFComponentRouteProtocol.h in Headers */,
-				4CBC78D90F1AC2E3AD695683DB3D1F3A /* SFConfiguration.h in Headers */,
-				D1D832FC4679EF67ADFDEEE73DA182FB /* SFEventCenter.h in Headers */,
-				207169F1D2D9F0CB4B236F6DA19B12A9 /* SFFont.h in Headers */,
-				1AE7A6254F1FCAAA9754BC1A4FC8B9D3 /* SFImage.h in Headers */,
-				191C1D07D9AE34FD7330539818C90E53 /* SFLanguage.h in Headers */,
-				2CDF851F1BFA7660E516FDD2F7036A28 /* SFRoute.h in Headers */,
+				B6DE0C86D96771EE96E9C3FB8CBC77D6 /* SFAppDelegate.h in Headers */,
+				A30586E450F1082B109B38A13E76A4D9 /* SFAppDelegateProtocol.h in Headers */,
+				BDC28AA3078A507A9C22BEBB5DB1473A /* SFBundle.h in Headers */,
+				8A476B7EA23F72DADFE03FAB44F06FC2 /* SFColors.h in Headers */,
+				A565FE1707B893D7550D28C388F1B5ED /* SFComponent.h in Headers */,
+				8F18D5BAD45019FEAC5507F1270434B8 /* SFComponentEventProtocol.h in Headers */,
+				200C112EA88A678B33A3ADB44A543765 /* SFComponentLifeCycleProtocol.h in Headers */,
+				1A25072238A8D6E47D1279D8EE8D9C18 /* SFComponentManager.h in Headers */,
+				AC9A24D0BB4B87BCAF7E4E77B1B5302B /* SFComponentRouteProtocol.h in Headers */,
+				69BFEF358EC1F23D63316E366C6C3324 /* SFConfiguration.h in Headers */,
+				C3151AD3C5617EF442E43FF6E9CBB634 /* SFEventCenter.h in Headers */,
+				A8D648988F9BB13F9832CC4D2A719C85 /* SFFont.h in Headers */,
+				08EBB4E8F06834A0694A1DBD52FE2BB1 /* SFImage.h in Headers */,
+				A7857D61E56899A746BA016C6E21E0EA /* SFLanguage.h in Headers */,
+				BCFD50C180030A83CD27F8F2DE37DEDA /* SFRoute.h in Headers */,
+				691100A00703EC725871A1612CAF72DC /* SFServerConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +387,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7ABF7C32015437C70E02E1BE3CA6463 /* Build configuration list for PBXNativeTarget "SFComponent" */;
 			buildPhases = (
-				85186F0CA0F5B441645BFC74D1882F75 /* Sources */,
+				F4377A90642D170B9E7BC35CEBF95D21 /* Sources */,
 				0B9C7547BEDE5611FF64997D91BF6171 /* Frameworks */,
-				B13260BF72C5AF413AA886B69CFBD65C /* Headers */,
+				67E99D2977A5910A4B375B95301BFD77 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -466,22 +473,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85186F0CA0F5B441645BFC74D1882F75 /* Sources */ = {
+		F4377A90642D170B9E7BC35CEBF95D21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6EF85166AE27349CE112D1E2C2DFA24 /* SFAppDelegate.m in Sources */,
-				77BC6C71F0FCC7307A290C3F0AE64492 /* SFBundle.m in Sources */,
-				A4C18AD053D4FF1171B6153D09ED3975 /* SFColors.m in Sources */,
-				7B337C4767C1DB534AAB9EE82CC9BD72 /* SFComponent-dummy.m in Sources */,
-				63BB73E595DD9D1D67A68FA16462DDD1 /* SFComponent.m in Sources */,
-				F8012495150C3CF20066E67C3747E054 /* SFComponentManager.m in Sources */,
-				C3E28EF8CB9EDC2D191F5F207AF49D11 /* SFConfiguration.m in Sources */,
-				A482CDFD9656A477A0D0BBC1250AF810 /* SFEventCenter.m in Sources */,
-				7B516DBBEC506B1BF92DCC455FF6A66B /* SFFont.m in Sources */,
-				7A21E4A1DE54CA9E58D9353B3A6F518A /* SFImage.m in Sources */,
-				89C3D21AA235C04E1DF4874F404C8733 /* SFLanguage.m in Sources */,
-				C251CED0A6FA6384F78E6FE7370A5588 /* SFRoute.m in Sources */,
+				4FA7C760D48213252D622FA4A6726EC8 /* SFAppDelegate.m in Sources */,
+				BE1AAEA7C45E8712B0FC2A63E78E6456 /* SFBundle.m in Sources */,
+				DCA45A4DA3A4B9E75632578F70897A1F /* SFColors.m in Sources */,
+				F870D77EF482AEE89585726CEA10D410 /* SFComponent-dummy.m in Sources */,
+				CB273700DD8A0BF2ECCADA5D37F9A6BC /* SFComponent.m in Sources */,
+				BE5BC2A5C62F8CCD9B4972FCA385A55C /* SFComponentManager.m in Sources */,
+				1C19F6F1D7C959826D3A56424A635CDB /* SFConfiguration.m in Sources */,
+				D78A5EBF882B6BA4C3CD57E245E87804 /* SFEventCenter.m in Sources */,
+				DCC2CE4CCAE39EA81C861DDEB7082570 /* SFFont.m in Sources */,
+				8236474710B285DF603E6129EC1C6D27 /* SFImage.m in Sources */,
+				9DBBF9BBAEF6B88143C0C6A6910B14AF /* SFLanguage.m in Sources */,
+				66A09E910DE6D9E18F414C5E9E355780 /* SFRoute.m in Sources */,
+				121D8D14C24FEFB4A506E6BAFD69A807 /* SFServerConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +513,7 @@
 /* Begin XCBuildConfiguration section */
 		1505916223E5F11A994AED488B7A349E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5602FA3CAF386D14E2D8C89DD7AFFBA /* SFComponent.xcconfig */;
+			baseConfigurationReference = E55391112CCEBD9A2A77130FAC992C38 /* SFComponent.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFComponent";
@@ -584,7 +592,7 @@
 		};
 		2506C3608DAD43C3CBB254DFC48AC062 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5602FA3CAF386D14E2D8C89DD7AFFBA /* SFComponent.xcconfig */;
+			baseConfigurationReference = E55391112CCEBD9A2A77130FAC992C38 /* SFComponent.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -608,7 +616,7 @@
 		};
 		503C8EF4FFDE9D7FCB92C38FCDCFF421 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5602FA3CAF386D14E2D8C89DD7AFFBA /* SFComponent.xcconfig */;
+			baseConfigurationReference = E55391112CCEBD9A2A77130FAC992C38 /* SFComponent.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SFComponent";
@@ -645,7 +653,7 @@
 		};
 		A8B4954C207623775684D7BB10636E46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5602FA3CAF386D14E2D8C89DD7AFFBA /* SFComponent.xcconfig */;
+			baseConfigurationReference = E55391112CCEBD9A2A77130FAC992C38 /* SFComponent.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

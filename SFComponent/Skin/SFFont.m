@@ -11,7 +11,7 @@
 
 @interface SFFont ()
 
-@property (nonatomic, strong) NSMutableDictionary *fonts;
+@property (nonatomic, strong, readonly) NSDictionary *fonts;
 
 @end
 
@@ -30,9 +30,15 @@
     self = [super init];
     if (self) {
         NSBundle *bundle = [SFBundle bundleWithComponentName:[SFComponent componentName]];
+        if (!bundle) {
+            return self;
+        }
         
         NSString *fontPlistPath = [bundle pathForResource:@"Font" ofType:@"plist" inDirectory:@"master"];
-        self.fonts = [NSMutableDictionary dictionaryWithContentsOfFile:fontPlistPath];
+        if (!fontPlistPath || fontPlistPath.length == 0) {
+            return self;
+        }
+        _fonts = [NSDictionary dictionaryWithContentsOfFile:fontPlistPath];
     }
     return self;
 }

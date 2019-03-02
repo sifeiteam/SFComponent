@@ -11,7 +11,7 @@
 
 @interface SFColors ()
 
-@property (nonatomic, strong) NSMutableDictionary *colors;
+@property (nonatomic, strong, readonly) NSDictionary *colors;
 
 @end
 
@@ -30,9 +30,14 @@
     self = [super init];
     if (self) {
         NSBundle *bundle = [SFBundle bundleWithComponentName:[SFComponent componentName]];
-        
+        if (!bundle) {
+            return self;
+        }
         NSString *colorPlistPath = [bundle pathForResource:@"Color" ofType:@"plist" inDirectory:@"master"];
-        self.colors = [NSMutableDictionary dictionaryWithContentsOfFile:colorPlistPath];
+        if (!colorPlistPath || colorPlistPath.length == 0) {
+            return self;
+        }
+        _colors = [NSDictionary dictionaryWithContentsOfFile:colorPlistPath];
     }
     return self;
 }

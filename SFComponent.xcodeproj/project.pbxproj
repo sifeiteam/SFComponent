@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56D408932222D92700D82EB8 /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D408912222D92700D82EB8 /* Color.plist */; };
-		56D408942222D92700D82EB8 /* Font.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56D408922222D92700D82EB8 /* Font.plist */; };
-		56D408B42222D95C00D82EB8 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408962222D95B00D82EB8 /* SFAppDelegate.m */; };
-		56D408B52222D95C00D82EB8 /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4089B2222D95C00D82EB8 /* SFLanguage.m */; };
-		56D408B62222D95C00D82EB8 /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D4089E2222D95C00D82EB8 /* SFRoute.m */; };
-		56D408B72222D95C00D82EB8 /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408A12222D95C00D82EB8 /* SFEventCenter.m */; };
-		56D408B82222D95C00D82EB8 /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408A42222D95C00D82EB8 /* SFConfiguration.m */; };
-		56D408B92222D95C00D82EB8 /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408A72222D95C00D82EB8 /* SFComponentManager.m */; };
-		56D408BA2222D95C00D82EB8 /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408AA2222D95C00D82EB8 /* SFComponent.m */; };
-		56D408BB2222D95C00D82EB8 /* SFFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408AE2222D95C00D82EB8 /* SFFont.m */; };
-		56D408BC2222D95C00D82EB8 /* SFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408B02222D95C00D82EB8 /* SFBundle.m */; };
-		56D408BD2222D95C00D82EB8 /* SFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D408B12222D95C00D82EB8 /* SFColor.m */; };
+		5637C610222A28120063E01D /* SFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5EE222A28120063E01D /* SFImage.m */; };
+		5637C611222A28120063E01D /* SFFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5EF222A28120063E01D /* SFFont.m */; };
+		5637C612222A28120063E01D /* SFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5F0222A28120063E01D /* SFColors.m */; };
+		5637C613222A28120063E01D /* SFBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5F1222A28120063E01D /* SFBundle.m */; };
+		5637C614222A28120063E01D /* SFServerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5F7222A28120063E01D /* SFServerConfig.m */; };
+		5637C615222A28120063E01D /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5FA222A28120063E01D /* SFConfiguration.m */; };
+		5637C616222A28120063E01D /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5FD222A28120063E01D /* SFLanguage.m */; };
+		5637C617222A28120063E01D /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C600222A28120063E01D /* SFRoute.m */; };
+		5637C618222A28120063E01D /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C602222A28120063E01D /* SFAppDelegate.m */; };
+		5637C619222A28120063E01D /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C607222A28120063E01D /* SFComponentManager.m */; };
+		5637C61A222A28120063E01D /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C60A222A28120063E01D /* SFComponent.m */; };
+		5637C61B222A28120063E01D /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C60F222A28120063E01D /* SFEventCenter.m */; };
+		5637C623222A281D0063E01D /* Server.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C61E222A281D0063E01D /* Server.plist */; };
+		5637C624222A281D0063E01D /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C61F222A281D0063E01D /* Color.plist */; };
+		5637C625222A281D0063E01D /* Font.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C620222A281D0063E01D /* Font.plist */; };
+		5637C626222A281D0063E01D /* WX20190227-205248@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5637C622222A281D0063E01D /* WX20190227-205248@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,34 +38,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5637C5EE222A28120063E01D /* SFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFImage.m; sourceTree = "<group>"; };
+		5637C5EF222A28120063E01D /* SFFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFont.m; sourceTree = "<group>"; };
+		5637C5F0222A28120063E01D /* SFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFColors.m; sourceTree = "<group>"; };
+		5637C5F1222A28120063E01D /* SFBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBundle.m; sourceTree = "<group>"; };
+		5637C5F2222A28120063E01D /* SFFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFont.h; sourceTree = "<group>"; };
+		5637C5F3222A28120063E01D /* SFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFImage.h; sourceTree = "<group>"; };
+		5637C5F4222A28120063E01D /* SFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFColors.h; sourceTree = "<group>"; };
+		5637C5F5222A28120063E01D /* SFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBundle.h; sourceTree = "<group>"; };
+		5637C5F7222A28120063E01D /* SFServerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFServerConfig.m; sourceTree = "<group>"; };
+		5637C5F8222A28120063E01D /* SFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConfiguration.h; sourceTree = "<group>"; };
+		5637C5F9222A28120063E01D /* SFServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFServerConfig.h; sourceTree = "<group>"; };
+		5637C5FA222A28120063E01D /* SFConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFConfiguration.m; sourceTree = "<group>"; };
+		5637C5FC222A28120063E01D /* SFLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLanguage.h; sourceTree = "<group>"; };
+		5637C5FD222A28120063E01D /* SFLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
+		5637C5FF222A28120063E01D /* SFRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
+		5637C600222A28120063E01D /* SFRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
+		5637C602222A28120063E01D /* SFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		5637C603222A28120063E01D /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
+		5637C604222A28120063E01D /* SFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		5637C606222A28120063E01D /* SFComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
+		5637C607222A28120063E01D /* SFComponentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
+		5637C608222A28120063E01D /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
+		5637C609222A28120063E01D /* SFComponentEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentEventProtocol.h; sourceTree = "<group>"; };
+		5637C60A222A28120063E01D /* SFComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponent.m; sourceTree = "<group>"; };
+		5637C60B222A28120063E01D /* SFComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentManager.h; sourceTree = "<group>"; };
+		5637C60C222A28120063E01D /* SFComponentRouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentRouteProtocol.h; sourceTree = "<group>"; };
+		5637C60E222A28120063E01D /* SFEventCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFEventCenter.h; sourceTree = "<group>"; };
+		5637C60F222A28120063E01D /* SFEventCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEventCenter.m; sourceTree = "<group>"; };
+		5637C61E222A281D0063E01D /* Server.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Server.plist; sourceTree = "<group>"; };
+		5637C61F222A281D0063E01D /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
+		5637C620222A281D0063E01D /* Font.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Font.plist; sourceTree = "<group>"; };
+		5637C622222A281D0063E01D /* WX20190227-205248@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WX20190227-205248@2x.png"; sourceTree = "<group>"; };
 		56D408792222D8FB00D82EB8 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFComponentBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		56D408912222D92700D82EB8 /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
-		56D408922222D92700D82EB8 /* Font.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Font.plist; sourceTree = "<group>"; };
-		56D408962222D95B00D82EB8 /* SFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
-		56D408972222D95B00D82EB8 /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
-		56D408982222D95B00D82EB8 /* SFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
-		56D4089A2222D95C00D82EB8 /* SFLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLanguage.h; sourceTree = "<group>"; };
-		56D4089B2222D95C00D82EB8 /* SFLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
-		56D4089D2222D95C00D82EB8 /* SFRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
-		56D4089E2222D95C00D82EB8 /* SFRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
-		56D408A02222D95C00D82EB8 /* SFEventCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFEventCenter.h; sourceTree = "<group>"; };
-		56D408A12222D95C00D82EB8 /* SFEventCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEventCenter.m; sourceTree = "<group>"; };
-		56D408A32222D95C00D82EB8 /* SFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConfiguration.h; sourceTree = "<group>"; };
-		56D408A42222D95C00D82EB8 /* SFConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFConfiguration.m; sourceTree = "<group>"; };
-		56D408A62222D95C00D82EB8 /* SFComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
-		56D408A72222D95C00D82EB8 /* SFComponentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
-		56D408A82222D95C00D82EB8 /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
-		56D408A92222D95C00D82EB8 /* SFComponentEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentEventProtocol.h; sourceTree = "<group>"; };
-		56D408AA2222D95C00D82EB8 /* SFComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponent.m; sourceTree = "<group>"; };
-		56D408AB2222D95C00D82EB8 /* SFComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentManager.h; sourceTree = "<group>"; };
-		56D408AC2222D95C00D82EB8 /* SFComponentRouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentRouteProtocol.h; sourceTree = "<group>"; };
-		56D408AE2222D95C00D82EB8 /* SFFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFont.m; sourceTree = "<group>"; };
-		56D408AF2222D95C00D82EB8 /* SFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFColor.h; sourceTree = "<group>"; };
-		56D408B02222D95C00D82EB8 /* SFBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBundle.m; sourceTree = "<group>"; };
-		56D408B12222D95C00D82EB8 /* SFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFColor.m; sourceTree = "<group>"; };
-		56D408B22222D95C00D82EB8 /* SFFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFont.h; sourceTree = "<group>"; };
-		56D408B32222D95C00D82EB8 /* SFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBundle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5637C5ED222A28120063E01D /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				5637C5EE222A28120063E01D /* SFImage.m */,
+				5637C5EF222A28120063E01D /* SFFont.m */,
+				5637C5F0222A28120063E01D /* SFColors.m */,
+				5637C5F1222A28120063E01D /* SFBundle.m */,
+				5637C5F2222A28120063E01D /* SFFont.h */,
+				5637C5F3222A28120063E01D /* SFImage.h */,
+				5637C5F4222A28120063E01D /* SFColors.h */,
+				5637C5F5222A28120063E01D /* SFBundle.h */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		5637C5F6222A28120063E01D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5637C5F7222A28120063E01D /* SFServerConfig.m */,
+				5637C5F8222A28120063E01D /* SFConfiguration.h */,
+				5637C5F9222A28120063E01D /* SFServerConfig.h */,
+				5637C5FA222A28120063E01D /* SFConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		5637C5FB222A28120063E01D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				5637C5FC222A28120063E01D /* SFLanguage.h */,
+				5637C5FD222A28120063E01D /* SFLanguage.m */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		5637C5FE222A28120063E01D /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				5637C5FF222A28120063E01D /* SFRoute.h */,
+				5637C600222A28120063E01D /* SFRoute.m */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		5637C601222A28120063E01D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5637C602222A28120063E01D /* SFAppDelegate.m */,
+				5637C603222A28120063E01D /* SFAppDelegateProtocol.h */,
+				5637C604222A28120063E01D /* SFAppDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		5637C605222A28120063E01D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				5637C606222A28120063E01D /* SFComponent.h */,
+				5637C607222A28120063E01D /* SFComponentManager.m */,
+				5637C608222A28120063E01D /* SFComponentLifeCycleProtocol.h */,
+				5637C609222A28120063E01D /* SFComponentEventProtocol.h */,
+				5637C60A222A28120063E01D /* SFComponent.m */,
+				5637C60B222A28120063E01D /* SFComponentManager.h */,
+				5637C60C222A28120063E01D /* SFComponentRouteProtocol.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		5637C60D222A28120063E01D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				5637C60E222A28120063E01D /* SFEventCenter.h */,
+				5637C60F222A28120063E01D /* SFEventCenter.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		5637C61C222A281D0063E01D /* master */ = {
+			isa = PBXGroup;
+			children = (
+				5637C61D222A281D0063E01D /* Config */,
+				5637C61F222A281D0063E01D /* Color.plist */,
+				5637C620222A281D0063E01D /* Font.plist */,
+				5637C621222A281D0063E01D /* Image */,
+			);
+			path = master;
+			sourceTree = "<group>";
+		};
+		5637C61D222A281D0063E01D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5637C61E222A281D0063E01D /* Server.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5637C621222A281D0063E01D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5637C622222A281D0063E01D /* WX20190227-205248@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		56D408702222D8FB00D82EB8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +217,13 @@
 		56D4087B2222D8FB00D82EB8 /* SFComponent */ = {
 			isa = PBXGroup;
 			children = (
-				56D408A52222D95C00D82EB8 /* Component */,
-				56D408A22222D95C00D82EB8 /* Configuration */,
-				56D408952222D95B00D82EB8 /* Delegate */,
-				56D4089F2222D95C00D82EB8 /* Event */,
-				56D408992222D95C00D82EB8 /* Language */,
-				56D4089C2222D95C00D82EB8 /* Route */,
-				56D408AD2222D95C00D82EB8 /* Skin */,
+				5637C605222A28120063E01D /* Component */,
+				5637C5F6222A28120063E01D /* Configuration */,
+				5637C601222A28120063E01D /* Delegate */,
+				5637C60D222A28120063E01D /* Event */,
+				5637C5FB222A28120063E01D /* Language */,
+				5637C5FE222A28120063E01D /* Route */,
+				5637C5ED222A28120063E01D /* Skin */,
 			);
 			path = SFComponent;
 			sourceTree = "<group>";
@@ -117,83 +231,9 @@
 		56D4088A2222D90B00D82EB8 /* SFComponentBundle */ = {
 			isa = PBXGroup;
 			children = (
-				56D408912222D92700D82EB8 /* Color.plist */,
-				56D408922222D92700D82EB8 /* Font.plist */,
+				5637C61C222A281D0063E01D /* master */,
 			);
 			path = SFComponentBundle;
-			sourceTree = "<group>";
-		};
-		56D408952222D95B00D82EB8 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				56D408962222D95B00D82EB8 /* SFAppDelegate.m */,
-				56D408972222D95B00D82EB8 /* SFAppDelegateProtocol.h */,
-				56D408982222D95B00D82EB8 /* SFAppDelegate.h */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
-		56D408992222D95C00D82EB8 /* Language */ = {
-			isa = PBXGroup;
-			children = (
-				56D4089A2222D95C00D82EB8 /* SFLanguage.h */,
-				56D4089B2222D95C00D82EB8 /* SFLanguage.m */,
-			);
-			path = Language;
-			sourceTree = "<group>";
-		};
-		56D4089C2222D95C00D82EB8 /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				56D4089D2222D95C00D82EB8 /* SFRoute.h */,
-				56D4089E2222D95C00D82EB8 /* SFRoute.m */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		56D4089F2222D95C00D82EB8 /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				56D408A02222D95C00D82EB8 /* SFEventCenter.h */,
-				56D408A12222D95C00D82EB8 /* SFEventCenter.m */,
-			);
-			path = Event;
-			sourceTree = "<group>";
-		};
-		56D408A22222D95C00D82EB8 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				56D408A32222D95C00D82EB8 /* SFConfiguration.h */,
-				56D408A42222D95C00D82EB8 /* SFConfiguration.m */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		56D408A52222D95C00D82EB8 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				56D408A62222D95C00D82EB8 /* SFComponent.h */,
-				56D408A72222D95C00D82EB8 /* SFComponentManager.m */,
-				56D408A82222D95C00D82EB8 /* SFComponentLifeCycleProtocol.h */,
-				56D408A92222D95C00D82EB8 /* SFComponentEventProtocol.h */,
-				56D408AA2222D95C00D82EB8 /* SFComponent.m */,
-				56D408AB2222D95C00D82EB8 /* SFComponentManager.h */,
-				56D408AC2222D95C00D82EB8 /* SFComponentRouteProtocol.h */,
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
-		56D408AD2222D95C00D82EB8 /* Skin */ = {
-			isa = PBXGroup;
-			children = (
-				56D408AE2222D95C00D82EB8 /* SFFont.m */,
-				56D408AF2222D95C00D82EB8 /* SFColor.h */,
-				56D408B02222D95C00D82EB8 /* SFBundle.m */,
-				56D408B12222D95C00D82EB8 /* SFColor.m */,
-				56D408B22222D95C00D82EB8 /* SFFont.h */,
-				56D408B32222D95C00D82EB8 /* SFBundle.h */,
-			);
-			path = Skin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +313,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D408932222D92700D82EB8 /* Color.plist in Resources */,
-				56D408942222D92700D82EB8 /* Font.plist in Resources */,
+				5637C624222A281D0063E01D /* Color.plist in Resources */,
+				5637C626222A281D0063E01D /* WX20190227-205248@2x.png in Resources */,
+				5637C625222A281D0063E01D /* Font.plist in Resources */,
+				5637C623222A281D0063E01D /* Server.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,16 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D408B62222D95C00D82EB8 /* SFRoute.m in Sources */,
-				56D408B52222D95C00D82EB8 /* SFLanguage.m in Sources */,
-				56D408B92222D95C00D82EB8 /* SFComponentManager.m in Sources */,
-				56D408BB2222D95C00D82EB8 /* SFFont.m in Sources */,
-				56D408BD2222D95C00D82EB8 /* SFColor.m in Sources */,
-				56D408B72222D95C00D82EB8 /* SFEventCenter.m in Sources */,
-				56D408B42222D95C00D82EB8 /* SFAppDelegate.m in Sources */,
-				56D408BC2222D95C00D82EB8 /* SFBundle.m in Sources */,
-				56D408B82222D95C00D82EB8 /* SFConfiguration.m in Sources */,
-				56D408BA2222D95C00D82EB8 /* SFComponent.m in Sources */,
+				5637C613222A28120063E01D /* SFBundle.m in Sources */,
+				5637C618222A28120063E01D /* SFAppDelegate.m in Sources */,
+				5637C61B222A28120063E01D /* SFEventCenter.m in Sources */,
+				5637C615222A28120063E01D /* SFConfiguration.m in Sources */,
+				5637C612222A28120063E01D /* SFColors.m in Sources */,
+				5637C619222A28120063E01D /* SFComponentManager.m in Sources */,
+				5637C610222A28120063E01D /* SFImage.m in Sources */,
+				5637C61A222A28120063E01D /* SFComponent.m in Sources */,
+				5637C617222A28120063E01D /* SFRoute.m in Sources */,
+				5637C611222A28120063E01D /* SFFont.m in Sources */,
+				5637C616222A28120063E01D /* SFLanguage.m in Sources */,
+				5637C614222A28120063E01D /* SFServerConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

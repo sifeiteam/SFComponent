@@ -14,6 +14,9 @@
         return nil;
     }
     NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@Bundle.bundle", componentName]];
+    if (!bundlePath || bundlePath.length == 0) {
+        return nil;
+    }
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     
     return bundle;
