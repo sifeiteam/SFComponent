@@ -14,6 +14,7 @@
 #import <SFComponent/SFFont.h>
 #import <SFComponent/SFImage.h>
 #import <SFComponent/SFServerConfig.h>
+#import <SFComponent/SFLanguage.h>
 
 @interface ViewController ()
 
@@ -43,6 +44,8 @@
     UIImage *image = [SFImage imageWithName:@"WX20190227-205248.png" componentName:[SFComponent componentName]];
     
     NSString *serv = [SFServerConfig serverWithKey:@"SFCOMPONENT_HOST_TEST" componentName:[SFComponent componentName]];
+    
+    NSString *text = [SFLanguage localizedStringWithKey:@"Text1" componentName:[SFComponent componentName]];
     
     int isdf = 0;
 }
