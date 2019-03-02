@@ -21,5 +21,10 @@
     "SFComponentBundle": [
       "SFComponentBundle/*"
     ]
+  },
+  "dependencies": {
+    "fishhook": [
+
+    ]
   }
 }

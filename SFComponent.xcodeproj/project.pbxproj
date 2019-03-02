@@ -25,6 +25,7 @@
 		5637C626222A281D0063E01D /* WX20190227-205248@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5637C622222A281D0063E01D /* WX20190227-205248@2x.png */; };
 		56CC19C4222A5B1E00A50935 /* SFInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19C3222A5B1E00A50935 /* SFInjection.m */; };
 		56CC19C8222A862200A50935 /* SFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19C7222A862200A50935 /* SFView.m */; };
+		56CC19D1222A9CD700A50935 /* SFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19D0222A9CD700A50935 /* SFLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,8 @@
 		56CC19C7222A862200A50935 /* SFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFView.m; sourceTree = "<group>"; };
 		56CC19C9222A8CAC00A50935 /* SFViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFViewProtocol.h; sourceTree = "<group>"; };
 		56CC19CA222A8CC100A50935 /* SFInjectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFInjectionProtocol.h; sourceTree = "<group>"; };
+		56CC19CF222A9CD700A50935 /* SFLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFLog.h; sourceTree = "<group>"; };
+		56CC19D0222A9CD700A50935 /* SFLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFLog.m; sourceTree = "<group>"; };
 		56D408792222D8FB00D82EB8 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFComponentBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -224,6 +227,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		56CC19CE222A9CA400A50935 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				56CC19CF222A9CD700A50935 /* SFLog.h */,
+				56CC19D0222A9CD700A50935 /* SFLog.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		56D408702222D8FB00D82EB8 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +257,7 @@
 		56D4087B2222D8FB00D82EB8 /* SFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				56CC19CE222A9CA400A50935 /* Log */,
 				56CC19C5222A82E000A50935 /* View */,
 				56CC19C1222A5ADF00A50935 /* Injection */,
 				5637C605222A28120063E01D /* Component */,
@@ -363,6 +376,7 @@
 				5637C615222A28120063E01D /* SFConfiguration.m in Sources */,
 				5637C612222A28120063E01D /* SFColors.m in Sources */,
 				5637C619222A28120063E01D /* SFComponentManager.m in Sources */,
+				56CC19D1222A9CD700A50935 /* SFLog.m in Sources */,
 				5637C610222A28120063E01D /* SFImages.m in Sources */,
 				5637C61A222A28120063E01D /* SFComponent.m in Sources */,
 				5637C617222A28120063E01D /* SFRoute.m in Sources */,
