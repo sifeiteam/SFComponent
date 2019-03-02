@@ -30,12 +30,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSError *error = nil;
-        BOOL success = [SFRoute goToComponent:[SFDemo1 componentName] page:@"test" viewController:self context:@{} error:&error];
+
+        BOOL success = [SFRoute goToComponent:[SFDemo1 componentName] page:@"test" viewController:self context:@{}];
     
     //    id resultaa = [SFEventCenter sendEvent:@"eventaaa" componentName:[SFDemo1 componentName] context:@{} error:&error];
     
-    [SFEventCenter sendEvent:@"eventdadd" componentName:[SFDemo1 componentName] context:@{} completion:^(id result, NSError *err) {
+    [SFEventCenter sendEvent:@"eventdadd" componentName:[SFDemo1 componentName] context:@{} completion:^(id result) {
         
         int iii = 0;
     }];

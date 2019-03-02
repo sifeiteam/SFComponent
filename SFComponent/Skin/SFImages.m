@@ -12,13 +12,16 @@
 
 + (UIImage *)imageWithName:(NSString *)imageName componentName:(NSString *)componentName {
     if (!imageName || imageName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数imageName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     if (!componentName || componentName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     NSBundle *bundle = [SFBundle bundleWithComponentName:componentName];
     if (!bundle) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@的bundle不存在", NSStringFromSelector(_cmd), componentName]);
         return nil;
     }
     // 获得文件名
@@ -30,6 +33,7 @@
 
     NSString *imagePath = [self imagePathWithScale:scale bundle:bundle name:name suffix:suffix];
     if (!imagePath || imagePath.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@的图片%@不存在", NSStringFromSelector(_cmd), componentName, imageName]);
         return nil;
     }
     return [UIImage imageWithContentsOfFile:imagePath];

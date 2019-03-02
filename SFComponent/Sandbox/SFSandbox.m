@@ -12,6 +12,7 @@
 
 + (NSString *)documentRootPathWithComponentName:(NSString *)componentName {
     if (!componentName || componentName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     // 获取Documents目录路径
@@ -21,6 +22,7 @@
 
 + (NSString *)libraryRootPathWithComponentName:(NSString *)componentName {
     if (!componentName || componentName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     //获取Library的目录路径
@@ -30,6 +32,7 @@
 
 + (NSString *)cachesRootPathWithComponentName:(NSString *)componentName {
     if (!componentName || componentName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     // 获取cache目录路径
@@ -39,6 +42,7 @@
 
 + (NSString *)tempRootPathWithComponentName:(NSString *)componentName {
     if (!componentName || componentName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     // 获取tmp目录路径

@@ -13,39 +13,30 @@
 
 + (id)sendEvent:(NSString *)eventName
   componentName:(NSString *)componentName
-        context:(NSDictionary *)context
-          error:(NSError *__autoreleasing *)error {
+        context:(NSDictionary *)context {
     if (!eventName || eventName.length == 0) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"参数eventName为空"}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数eventName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     if (!componentName || componentName.length == 0) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"参数componentName为空"}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     
     SFComponent *component = [[SFComponentManager sharedInstance].components objectForKey:componentName];
     if (!component) {
         //组件未启动，则启动该组件
-        BOOL startupSuccess = [[SFComponentManager sharedInstance] startupComponentWithName:componentName error:NULL];
+        BOOL startupSuccess = [[SFComponentManager sharedInstance] startupComponentWithName:componentName];
         if (startupSuccess) {
             component = [[SFComponentManager sharedInstance].components objectForKey:componentName];
         }
         if (!component) {
-            if (error) {
-                *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : [NSString stringWithFormat:@"组件%@不存在", componentName]}];
-            }
+            NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@不存在", NSStringFromSelector(_cmd), componentName]);
             return nil;
         }
     }
     if (![component respondsToSelector:@selector(responseEvent:context:)]) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : [NSString stringWithFormat:@"%@未重写responseEvent:context:", componentName]}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ %@未重写responseEvent:context:", NSStringFromSelector(_cmd), componentName]);
         return nil;
     }
     
@@ -55,16 +46,18 @@
 + (void)sendEvent:(NSString *)eventName
     componentName:(NSString *)componentName
           context:(NSDictionary *)context
-       completion:(void (^)(id, NSError *))completion {
+       completion:(void (^)(id))completion {
     if (!eventName || eventName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数eventName为空", NSStringFromSelector(_cmd)]);
         if (completion) {
-            completion(nil, [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"参数eventName为空"}]);
+            completion(nil);
         }
         return;
     }
     if (!componentName || componentName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数componentName为空", NSStringFromSelector(_cmd)]);
         if (completion) {
-            completion(nil, [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"参数componentName为空"}]);
+            completion(nil);
         }
         return;
     }
@@ -72,27 +65,29 @@
     SFComponent *component = [[SFComponentManager sharedInstance].components objectForKey:componentName];
     if (!component) {
         //组件未启动，则启动该组件
-        BOOL startupSuccess = [[SFComponentManager sharedInstance] startupComponentWithName:componentName error:NULL];
+        BOOL startupSuccess = [[SFComponentManager sharedInstance] startupComponentWithName:componentName];
         if (startupSuccess) {
             component = [[SFComponentManager sharedInstance].components objectForKey:componentName];
         }
         if (!component) {
+            NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@不存在", NSStringFromSelector(_cmd), componentName]);
             if (completion) {
-                completion(nil, [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : [NSString stringWithFormat:@"组件%@不存在", componentName]}]);
+                completion(nil);
             }
             return;
         }
     }
     if (![component respondsToSelector:@selector(asyncResponseEvent:context:completion:)]) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ %@未重写asyncResponseEvent:context:completion:", NSStringFromSelector(_cmd), componentName]);
         if (completion) {
-            completion(nil, [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : [NSString stringWithFormat:@"%@未重写asyncResponseEvent:context:completion:", componentName]}]);
+            completion(nil);
         }
         return;
     }
     
     [component asyncResponseEvent:eventName context:context completion:^(id result) {
         if (completion) {
-            completion(result, nil);
+            completion(result);
         }
     }];
 }

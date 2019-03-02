@@ -35,6 +35,7 @@
         }
         NSString *colorPlistPath = [bundle pathForResource:@"Color" ofType:@"plist" inDirectory:@"master"];
         if (!colorPlistPath || colorPlistPath.length == 0) {
+            NSLog(@"%@", [NSString stringWithFormat:@"%@ 颜色文件不存在", NSStringFromSelector(_cmd)]);
             return self;
         }
         _colors = [NSDictionary dictionaryWithContentsOfFile:colorPlistPath];
@@ -45,10 +46,12 @@
 - (UIColor *)colorWithNumber:(NSInteger)number {
     NSString *key = @(number).stringValue;
     if (!key || key.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 颜色编号为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     NSString *hexColor = [self.colors objectForKey:key];
     if (!hexColor || hexColor.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 颜色值为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     return [SFColors colorWithHexString:hexColor alpha:1];

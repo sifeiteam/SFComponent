@@ -32,34 +32,26 @@
     return _allComponents;
 }
 
-- (BOOL)startupComponentWithName:(NSString *)name error:(NSError *__autoreleasing *)error {
+- (BOOL)startupComponentWithName:(NSString *)name {
     if (!name || name.length == 0) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"参数name为空"}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数name为空", NSStringFromSelector(_cmd)]);
         return NO;
     }
     SFComponent *component = [self.allComponents objectForKey:name];
     if (component) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : [NSString stringWithFormat:@"组件%@已启动，无需再次启动", name]}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@已启动，无需再次启动", NSStringFromSelector(_cmd), name]);
         return NO;
     }
     
     Class cls = NSClassFromString(name);
     if (![cls isSubclassOfClass:[SFComponent class]]) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : [NSString stringWithFormat:@"组件入口类%@非SFComponent的子类", name]}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件入口类%@非SFComponent的子类", NSStringFromSelector(_cmd), name]);
         return NO;
     }
 
     component = [[cls alloc] init];
     if (!component) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"组件初始化失败"}];
-        }
+         NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件初始化失败", NSStringFromSelector(_cmd)]);
         return NO;
     }
     @synchronized (self) {
@@ -71,11 +63,9 @@
     return YES;
 }
 
-- (BOOL)removeComponentWithName:(NSString *)name error:(NSError *__autoreleasing *)error {
+- (BOOL)removeComponentWithName:(NSString *)name {
     if (!name || name.length == 0) {
-        if (error) {
-            *error = [NSError errorWithDomain:NSURLErrorDomain code:0 userInfo:@{@"reason" : @"参数name为空"}];
-        }
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数name为空", NSStringFromSelector(_cmd)]);
         return NO;
     }
     SFComponent *component = [self.allComponents objectForKey:name];

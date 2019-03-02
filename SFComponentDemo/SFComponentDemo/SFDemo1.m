@@ -30,7 +30,7 @@
     int i = 0;
 }
 
-- (BOOL)goToPage:(NSString *)page viewController:(UIViewController *)viewController context:(NSDictionary *)context error:(NSError *__autoreleasing *)error {
+- (BOOL)goToPage:(NSString *)page viewController:(UIViewController *)viewController context:(NSDictionary *)context {
     
     return YES;
 }

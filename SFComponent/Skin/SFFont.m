@@ -36,6 +36,7 @@
         
         NSString *fontPlistPath = [bundle pathForResource:@"Font" ofType:@"plist" inDirectory:@"master"];
         if (!fontPlistPath || fontPlistPath.length == 0) {
+            NSLog(@"%@", [NSString stringWithFormat:@"%@ 字体文件不存在", NSStringFromSelector(_cmd)]);
             return self;
         }
         _fonts = [NSDictionary dictionaryWithContentsOfFile:fontPlistPath];
@@ -46,6 +47,7 @@
 - (UIFont *)fontWithNumber:(NSInteger)number {
     NSString *key = @(number).stringValue;
     if (!key || key.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 字体编号为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     

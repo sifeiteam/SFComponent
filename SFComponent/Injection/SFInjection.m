@@ -29,9 +29,11 @@
 
 - (void)addDelegate:(id<SFInjectionProtocol>)delegate identifier:(nonnull NSString *)identifier {
     if (!delegate) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数delegate为空", NSStringFromSelector(_cmd)]);
         return;
     }
     if (!identifier || identifier.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数identifier为空", NSStringFromSelector(_cmd)]);
         return;
     }
     @synchronized (self) {
@@ -41,6 +43,7 @@
             [self.delegatesForIdentifier setObject:delegates forKey:identifier];
         }
         if ([delegates containsObject:delegate]) {
+            NSLog(@"%@", [NSString stringWithFormat:@"%@ delegate已存在", NSStringFromSelector(_cmd)]);
             return;
         }
         [delegates addObject:delegate];
@@ -49,14 +52,17 @@
 
 - (void)removeDelegate:(id<SFInjectionProtocol>)delegate identifier:(nonnull NSString *)identifier {
     if (!delegate) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数delegate为空", NSStringFromSelector(_cmd)]);
         return;
     }
     if (!identifier || identifier.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数identifier为空", NSStringFromSelector(_cmd)]);
         return;
     }
     @synchronized (self) {
         NSHashTable *delegates = [self.delegatesForIdentifier objectForKey:identifier];
         if (!delegates) {
+            NSLog(@"%@", [NSString stringWithFormat:@"%@ delegate不存在", NSStringFromSelector(_cmd)]);
             return;
         }
         [delegates removeObject:delegate];
@@ -65,6 +71,7 @@
 
 - (void)removeAllDelegateWithIdentifier:(NSString *)identifier {
     if (!identifier || identifier.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数identifier为空", NSStringFromSelector(_cmd)]);
         return;
     }
     [self.delegatesForIdentifier removeObjectForKey:identifier];
@@ -72,6 +79,7 @@
 
 - (NSArray<NSDictionary *> *)fetchInjectionParamsWithIdentifier:(NSString *)identifier {
     if (!identifier || identifier.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数identifier为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     @synchronized (self) {
@@ -81,9 +89,11 @@
 
 - (BOOL)injectWithIdentifier:(NSString *)identifier params:(NSDictionary *)params {
     if (!identifier || identifier.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数identifier为空", NSStringFromSelector(_cmd)]);
         return NO;
     }
     if (!params || params.count == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数params为空", NSStringFromSelector(_cmd)]);
         return NO;
     }
     @synchronized (self) {
