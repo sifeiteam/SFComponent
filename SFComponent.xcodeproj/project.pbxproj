@@ -23,6 +23,7 @@
 		5637C624222A281D0063E01D /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C61F222A281D0063E01D /* Color.plist */; };
 		5637C625222A281D0063E01D /* Font.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C620222A281D0063E01D /* Font.plist */; };
 		5637C626222A281D0063E01D /* WX20190227-205248@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5637C622222A281D0063E01D /* WX20190227-205248@2x.png */; };
+		56CC19C4222A5B1E00A50935 /* SFInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19C3222A5B1E00A50935 /* SFInjection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +71,8 @@
 		5637C61F222A281D0063E01D /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
 		5637C620222A281D0063E01D /* Font.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Font.plist; sourceTree = "<group>"; };
 		5637C622222A281D0063E01D /* WX20190227-205248@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WX20190227-205248@2x.png"; sourceTree = "<group>"; };
+		56CC19C2222A5B1E00A50935 /* SFInjection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFInjection.h; sourceTree = "<group>"; };
+		56CC19C3222A5B1E00A50935 /* SFInjection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFInjection.m; sourceTree = "<group>"; };
 		56D408792222D8FB00D82EB8 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFComponentBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -196,6 +199,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		56CC19C1222A5ADF00A50935 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				56CC19C2222A5B1E00A50935 /* SFInjection.h */,
+				56CC19C3222A5B1E00A50935 /* SFInjection.m */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
 		56D408702222D8FB00D82EB8 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +229,7 @@
 		56D4087B2222D8FB00D82EB8 /* SFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				56CC19C1222A5ADF00A50935 /* Injection */,
 				5637C605222A28120063E01D /* Component */,
 				5637C5F6222A28120063E01D /* Configuration */,
 				5637C601222A28120063E01D /* Delegate */,
@@ -338,6 +351,7 @@
 				5637C617222A28120063E01D /* SFRoute.m in Sources */,
 				5637C611222A28120063E01D /* SFFont.m in Sources */,
 				5637C616222A28120063E01D /* SFLanguage.m in Sources */,
+				56CC19C4222A5B1E00A50935 /* SFInjection.m in Sources */,
 				5637C614222A28120063E01D /* SFServerConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -456,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

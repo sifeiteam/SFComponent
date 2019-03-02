@@ -15,6 +15,7 @@
 #import <SFComponent/SFImage.h>
 #import <SFComponent/SFServerConfig.h>
 #import <SFComponent/SFLanguage.h>
+#import <SFComponent/SFInjection.h>
 
 @interface ViewController ()
 
@@ -26,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSError *error = nil;
-    //    BOOL success = [SFRoute goToComponent:[SFDemo1 componentName] page:@"test" viewController:self context:@{} error:&error];
+        BOOL success = [SFRoute goToComponent:[SFDemo1 componentName] page:@"test" viewController:self context:@{} error:&error];
     
     //    id resultaa = [SFEventCenter sendEvent:@"eventaaa" componentName:[SFDemo1 componentName] context:@{} error:&error];
     
@@ -51,6 +52,9 @@
     
     NSArray *all = [SFLanguage getAllLanguagesSupported];
     
+    [[SFInjection sharedInstance] injectWithIdentifier:@"123" params:@{@"sdf":@"1234"}];
+    
+    NSArray *arr = [[SFInjection sharedInstance] fetchInjectionParamsWithIdentifier:@"123"];
     int isdf = 0;
 }
 

@@ -7,15 +7,22 @@
 //
 
 #import "SFDemo1.h"
+#import <SFComponent/SFInjection.h>
+
+@interface SFDemo1 () <SFInjectionDelegate>
+
+@end
 
 @implementation SFDemo1
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     int i = 0;
+    
     return YES;
 }
 
 - (void)didFinishStartup {
+    [[SFInjection sharedInstance] addDelegate:self identifier:@"123"];
     int i = 0;
 }
 
@@ -34,6 +41,12 @@
 
 - (void)asyncResponseEvent:(NSString *)eventName context:(NSDictionary *)context completion:(void (^)(id))completion {
     completion(@"123");
+}
+
+#pragma mark - SFInjectionDelegate
+
+- (void)observeWithIdentifier:(NSString *)identifier params:(NSDictionary *)params {
+    int ii = 0;
 }
 
 @end
