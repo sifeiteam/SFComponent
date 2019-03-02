@@ -17,6 +17,7 @@
 #import <SFComponent/SFLanguage.h>
 #import <SFComponent/SFInjection.h>
 #import <SFComponent/SFView.h>
+#import <SFComponent/SFSandbox.h>
 
 @interface ViewController () <SFViewProtocol>
 
@@ -63,6 +64,13 @@
     self.testView.delegate = self;
     
     [self.testView sendMessageFromCallerToView:@{@"bbb" : @"0000"} key:@"abc"];
+    
+    NSString *a = [SFSandbox documentRootPathWithComponentName:[SFDemo1 componentName]];
+    NSString *b = [SFSandbox libraryRootPathWithComponentName:[SFDemo1 componentName]];
+    NSString *c = [SFSandbox cachesRootPathWithComponentName:[SFDemo1 componentName]];
+    NSString *d = [SFSandbox tempRootPathWithComponentName:[SFDemo1 componentName]];
+    
+    int dd = 0 ;
 }
 
 - (void)view:(SFView *)view key:(NSString *)key message:(NSDictionary *)message {

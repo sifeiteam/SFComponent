@@ -75,3 +75,7 @@ pod 'SFComponent'
 ### SFLog
 
 Hook了NSLog，只有在DEBUG下才能打印出日志。
+
+### SFSandbox
+
+提供组件的沙盒路径，每个组件只能在这个类提供的路径下读写文件。
