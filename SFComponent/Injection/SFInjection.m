@@ -109,8 +109,8 @@
         
         NSHashTable *delegates = [self.delegatesForIdentifier objectForKey:identifier];
         for (id <SFInjectionProtocol> delegate in delegates) {
-            if (delegate && [delegate respondsToSelector:@selector(observeWithIdentifier:params:)]) {
-                [delegate observeWithIdentifier:identifier params:params];
+            if (delegate && [delegate respondsToSelector:@selector(observeInjectionWithIdentifier:params:)]) {
+                [delegate observeInjectionWithIdentifier:identifier params:params];
             }
         }
         

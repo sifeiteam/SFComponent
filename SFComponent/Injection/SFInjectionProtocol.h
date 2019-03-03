@@ -17,7 +17,7 @@
  @param identifier 唯一标识，业务自行定义
  @param params 参数信息
  */
-- (void)observeWithIdentifier:(NSString *)identifier params:(NSDictionary *)params;
+- (void)observeInjectionWithIdentifier:(NSString *)identifier params:(NSDictionary *)params;
 
 @end
 

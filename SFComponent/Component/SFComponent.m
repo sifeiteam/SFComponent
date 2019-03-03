@@ -14,4 +14,8 @@
     return NSStringFromClass([self class]);
 }
 
++ (BOOL)startupWhenAppLaunched {
+    return NO;
+}
+
 @end

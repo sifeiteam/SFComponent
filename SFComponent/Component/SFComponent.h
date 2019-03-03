@@ -25,4 +25,11 @@ SFComponentEventProtocol
  */
 + (NSString *)componentName;
 
+/**
+ App启动时是否启动组件，默认NO。子类可重写。
+
+ @return YES：启动。NO：需要时才会启动。
+ */
++ (BOOL)startupWhenAppLaunched;
+
 @end
