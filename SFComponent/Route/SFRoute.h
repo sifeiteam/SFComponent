@@ -23,4 +23,16 @@
        viewController:(UIViewController *)viewController
               context:(NSDictionary *)context;
 
+/**
+ 获取页面
+
+ @param page 页面标识，由组件自行定义
+ @param componentName 组件名
+ @param context 上下文，可以在这里传参数
+ @return 页面控制器
+ */
++ (UIViewController *)getPage:(NSString *)page
+                componentName:(NSString *)componentName
+                      context:(NSDictionary *)context;
+
 @end

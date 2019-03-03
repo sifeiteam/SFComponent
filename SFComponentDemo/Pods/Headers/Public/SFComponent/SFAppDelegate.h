@@ -1,1 +1,0 @@
-../../../../../SFComponent/Delegate/SFAppDelegate.h

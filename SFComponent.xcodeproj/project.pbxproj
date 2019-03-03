@@ -15,7 +15,6 @@
 		5637C615222A28120063E01D /* SFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5FA222A28120063E01D /* SFConfiguration.m */; };
 		5637C616222A28120063E01D /* SFLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C5FD222A28120063E01D /* SFLanguage.m */; };
 		5637C617222A28120063E01D /* SFRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C600222A28120063E01D /* SFRoute.m */; };
-		5637C618222A28120063E01D /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C602222A28120063E01D /* SFAppDelegate.m */; };
 		5637C619222A28120063E01D /* SFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C607222A28120063E01D /* SFComponentManager.m */; };
 		5637C61A222A28120063E01D /* SFComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C60A222A28120063E01D /* SFComponent.m */; };
 		5637C61B222A28120063E01D /* SFEventCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5637C60F222A28120063E01D /* SFEventCenter.m */; };
@@ -58,9 +57,6 @@
 		5637C5FD222A28120063E01D /* SFLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLanguage.m; sourceTree = "<group>"; };
 		5637C5FF222A28120063E01D /* SFRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRoute.h; sourceTree = "<group>"; };
 		5637C600222A28120063E01D /* SFRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRoute.m; sourceTree = "<group>"; };
-		5637C602222A28120063E01D /* SFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
-		5637C603222A28120063E01D /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
-		5637C604222A28120063E01D /* SFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
 		5637C606222A28120063E01D /* SFComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponent.h; sourceTree = "<group>"; };
 		5637C607222A28120063E01D /* SFComponentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFComponentManager.m; sourceTree = "<group>"; };
 		5637C608222A28120063E01D /* SFComponentLifeCycleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComponentLifeCycleProtocol.h; sourceTree = "<group>"; };
@@ -74,6 +70,7 @@
 		5637C61F222A281D0063E01D /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
 		5637C620222A281D0063E01D /* Font.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Font.plist; sourceTree = "<group>"; };
 		5637C622222A281D0063E01D /* WX20190227-205248@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WX20190227-205248@2x.png"; sourceTree = "<group>"; };
+		563AD450222B732D00C482C7 /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
 		56CC19C2222A5B1E00A50935 /* SFInjection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFInjection.h; sourceTree = "<group>"; };
 		56CC19C3222A5B1E00A50935 /* SFInjection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFInjection.m; sourceTree = "<group>"; };
 		56CC19C6222A862100A50935 /* SFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFView.h; sourceTree = "<group>"; };
@@ -150,16 +147,6 @@
 			path = Route;
 			sourceTree = "<group>";
 		};
-		5637C601222A28120063E01D /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				5637C602222A28120063E01D /* SFAppDelegate.m */,
-				5637C603222A28120063E01D /* SFAppDelegateProtocol.h */,
-				5637C604222A28120063E01D /* SFAppDelegate.h */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
 		5637C605222A28120063E01D /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +157,7 @@
 				5637C60A222A28120063E01D /* SFComponent.m */,
 				5637C60B222A28120063E01D /* SFComponentManager.h */,
 				5637C60C222A28120063E01D /* SFComponentRouteProtocol.h */,
+				563AD450222B732D00C482C7 /* SFAppDelegateProtocol.h */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -275,7 +263,6 @@
 				56CC19C1222A5ADF00A50935 /* Injection */,
 				5637C605222A28120063E01D /* Component */,
 				5637C5F6222A28120063E01D /* Configuration */,
-				5637C601222A28120063E01D /* Delegate */,
 				5637C60D222A28120063E01D /* Event */,
 				5637C5FB222A28120063E01D /* Language */,
 				5637C5FE222A28120063E01D /* Route */,
@@ -384,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5637C613222A28120063E01D /* SFBundle.m in Sources */,
-				5637C618222A28120063E01D /* SFAppDelegate.m in Sources */,
 				5637C61B222A28120063E01D /* SFEventCenter.m in Sources */,
 				5637C615222A28120063E01D /* SFConfiguration.m in Sources */,
 				5637C612222A28120063E01D /* SFColors.m in Sources */,
