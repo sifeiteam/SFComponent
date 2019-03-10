@@ -44,6 +44,10 @@
     }
     
     Class cls = NSClassFromString(name);
+    if (!cls) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件入口类%@不存在", NSStringFromSelector(_cmd), name]);
+        return NO;
+    }
     if (![cls isSubclassOfClass:[SFComponent class]]) {
         NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件入口类%@非SFComponent的子类", NSStringFromSelector(_cmd), name]);
         return NO;
@@ -80,6 +84,37 @@
     }
     
     return YES;
+}
+
+- (BOOL)isComponentValid:(NSString *)name {
+    if (!name || name.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数name为空", NSStringFromSelector(_cmd)]);
+        return NO;
+    }
+    
+    Class cls = NSClassFromString(name);
+    if (!cls) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件入口类%@不存在", NSStringFromSelector(_cmd), name]);
+        return NO;
+    }
+    if (![cls isSubclassOfClass:[SFComponent class]]) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件入口类%@非SFComponent的子类", NSStringFromSelector(_cmd), name]);
+        return NO;
+    }
+    
+    return YES;
+}
+
+- (BOOL)isComponentStartup:(NSString *)name {
+    if (!name || name.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数name为空", NSStringFromSelector(_cmd)]);
+        return NO;
+    }
+    SFComponent *component = [self.allComponents objectForKey:name];
+    if (component) {
+        return YES;
+    }
+    return NO;
 }
 
 - (NSDictionary<NSString *,SFComponent *> *)components {

@@ -37,4 +37,20 @@
  */
 - (BOOL)removeComponentWithName:(NSString *)name;
 
+/**
+ 判断组件是否有效
+ 
+ @param name 组件名
+ @return 有效（YES）无效（NO）
+ */
+- (BOOL)isComponentValid:(NSString *)name;
+
+/**
+ 判断组件是否已启动
+
+ @param name 组件名
+ @return 已启动（YES）未启动（NO）
+ */
+- (BOOL)isComponentStartup:(NSString *)name;
+
 @end
