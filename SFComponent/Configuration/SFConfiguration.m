@@ -10,13 +10,10 @@
 
 @implementation SFConfiguration
 
-+ (id)configWithFileName:(NSString *)configFileName key:(NSString *)key componentName:(NSString *)componentName {
-    if (!configFileName || configFileName.length == 0) {
-        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数configFileName为空", NSStringFromSelector(_cmd)]);
-        return nil;
-    }
-    if (!key || key.length == 0) {
-        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数key为空", NSStringFromSelector(_cmd)]);
++ (NSString *)filePathWithFileName:(NSString *)fileName
+                     componentName:(NSString *)componentName {
+    if (!fileName || fileName.length == 0) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ 参数fileName为空", NSStringFromSelector(_cmd)]);
         return nil;
     }
     if (!componentName || componentName.length == 0) {
@@ -29,15 +26,25 @@
         return nil;
     }
     // 获得文件名
-    NSString *name = [configFileName stringByDeletingPathExtension];
+    NSString *name = [fileName stringByDeletingPathExtension];
     // 获得文件的后缀名（不带'.'）
-    NSString *suffix = [configFileName pathExtension];
-    NSString *configPlistPath = [bundle pathForResource:name ofType:suffix inDirectory:@"master/Config"];
+    NSString *suffix = [fileName pathExtension];
+    NSString *filePath = [bundle pathForResource:name ofType:suffix inDirectory:@"master/Config"];
+    return filePath;
+}
+
++ (NSDictionary *)configDictionaryWithFileName:(NSString *)configFileName componentName:(NSString *)componentName {
+    NSString *configPlistPath = [self filePathWithFileName:configFileName componentName:componentName];
     if (!configPlistPath || configPlistPath.length == 0) {
         NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@的%@文件不存在", NSStringFromSelector(_cmd), componentName, configFileName]);
         return nil;
     }
     NSDictionary *config = [NSDictionary dictionaryWithContentsOfFile:configPlistPath];
+    return config;
+}
+
++ (id)configWithFileName:(NSString *)configFileName key:(NSString *)key componentName:(NSString *)componentName {
+    NSDictionary *config = [self configDictionaryWithFileName:configFileName componentName:componentName];
     if (!config || config.count == 0) {
         NSLog(@"%@", [NSString stringWithFormat:@"%@ 组件%@的%@文件内容为空", NSStringFromSelector(_cmd), componentName, configFileName]);
         return nil;
