@@ -79,27 +79,25 @@ BOOL isStartup = [[SFComponentManager sharedInstance] isComponentStartup:compone
 
 ```
 id result = [SFEventCenter sendEvent:@"b_event" componentName:@"SFComponentB" context:@{} error:&error];
-    
+
 或
 
 [SFEventCenter sendEvent:@"b_event" componentName:@"SFComponentB" context:@{} completion:^(id result) {
-    
+
 }];
 ```
 
 ```
 - (id)responseEvent:(NSString *)eventName context:(NSDictionary *)context {
-    //根据eventName处理对应的事件
+    //根据eventName处理对应的事件
     return @"ok";
 }
 
 - (void)asyncResponseEvent:(NSString *)eventName context:(NSDictionary *)context completion:(void (^)(id))completion {
-    //根据eventName处理对应的事件
+    //根据eventName处理对应的事件
     completion(@"ok");
 }
 ```
-
-
 
 ### 4、SFConfiguration
 
@@ -193,7 +191,7 @@ UIImage *image = [SFImages imageWithName:@"image.png" componentName:@"SFComponen
 
 ```
 - (void)view:(SFView *)view key:(NSString *)key message:(NSDictionary *)message {
-    
+
 }
 ```
 
@@ -249,6 +247,20 @@ NSString *documentPath = [SFSandbox documentRootPathWithComponentName:@"SFCompon
 NSString *libraryPath = [SFSandbox libraryRootPathWithComponentName:@"SFComponentA"];
 NSString *cachesPath = [SFSandbox cachesRootPathWithComponentName:@"SFComponentA"];
 NSString *tempPath = [SFSandbox tempRootPathWithComponentName:@"SFComponentA"];
+```
+
+### 14、UIView+SFContext
+
+- sf_controller：获取该View所在的控制器
+
+```
+UIViewController *vc = view.sf_controller;
+```
+
+- sf_context：上下文，可在某个View里设置，其子视图可调用该属性访问上下文。如果没有，就找父视图，直到寻找结束。
+
+```
+id context = view.sf_context;
 ```
 
 

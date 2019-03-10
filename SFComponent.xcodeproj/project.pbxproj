@@ -25,6 +25,7 @@
 		56CC19C8222A862200A50935 /* SFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19C7222A862200A50935 /* SFView.m */; };
 		56CC19D1222A9CD700A50935 /* SFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19D0222A9CD700A50935 /* SFLog.m */; };
 		56CC19D5222AA52500A50935 /* SFSandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19D4222AA52500A50935 /* SFSandbox.m */; };
+		56E1219B22353D720012D9CF /* UIView+SFContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E1219A22353D720012D9CF /* UIView+SFContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +82,8 @@
 		56CC19D4222AA52500A50935 /* SFSandbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSandbox.m; sourceTree = "<group>"; };
 		56D408792222D8FB00D82EB8 /* libSFComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSFComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D408892222D90B00D82EB8 /* SFComponentBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFComponentBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		56E1219922353D720012D9CF /* UIView+SFContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SFContext.h"; sourceTree = "<group>"; };
+		56E1219A22353D720012D9CF /* UIView+SFContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SFContext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,7 @@
 		56D4087B2222D8FB00D82EB8 /* SFComponent */ = {
 			isa = PBXGroup;
 			children = (
+				56E1219822353D670012D9CF /* Context */,
 				56CC19D2222AA4FB00A50935 /* Sandbox */,
 				56CC19CE222A9CA400A50935 /* Log */,
 				56CC19C5222A82E000A50935 /* View */,
@@ -274,6 +278,15 @@
 				5637C61C222A281D0063E01D /* master */,
 			);
 			path = SFComponentBundle;
+			sourceTree = "<group>";
+		};
+		56E1219822353D670012D9CF /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				56E1219922353D720012D9CF /* UIView+SFContext.h */,
+				56E1219A22353D720012D9CF /* UIView+SFContext.m */,
+			);
+			path = Context;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +394,7 @@
 				5637C614222A28120063E01D /* SFServerConfig.m in Sources */,
 				56CC19D5222AA52500A50935 /* SFSandbox.m in Sources */,
 				56CC19C8222A862200A50935 /* SFView.m in Sources */,
+				56E1219B22353D720012D9CF /* UIView+SFContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
