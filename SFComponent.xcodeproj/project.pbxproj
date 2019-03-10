@@ -21,7 +21,6 @@
 		5637C623222A281D0063E01D /* Server.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C61E222A281D0063E01D /* Server.plist */; };
 		5637C624222A281D0063E01D /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C61F222A281D0063E01D /* Color.plist */; };
 		5637C625222A281D0063E01D /* Font.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5637C620222A281D0063E01D /* Font.plist */; };
-		5637C626222A281D0063E01D /* WX20190227-205248@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5637C622222A281D0063E01D /* WX20190227-205248@2x.png */; };
 		56CC19C4222A5B1E00A50935 /* SFInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19C3222A5B1E00A50935 /* SFInjection.m */; };
 		56CC19C8222A862200A50935 /* SFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19C7222A862200A50935 /* SFView.m */; };
 		56CC19D1222A9CD700A50935 /* SFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC19D0222A9CD700A50935 /* SFLog.m */; };
@@ -69,7 +68,6 @@
 		5637C61E222A281D0063E01D /* Server.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Server.plist; sourceTree = "<group>"; };
 		5637C61F222A281D0063E01D /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
 		5637C620222A281D0063E01D /* Font.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Font.plist; sourceTree = "<group>"; };
-		5637C622222A281D0063E01D /* WX20190227-205248@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WX20190227-205248@2x.png"; sourceTree = "<group>"; };
 		563AD450222B732D00C482C7 /* SFAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegateProtocol.h; sourceTree = "<group>"; };
 		56CC19C2222A5B1E00A50935 /* SFInjection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFInjection.h; sourceTree = "<group>"; };
 		56CC19C3222A5B1E00A50935 /* SFInjection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFInjection.m; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 		5637C621222A281D0063E01D /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				5637C622222A281D0063E01D /* WX20190227-205248@2x.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5637C624222A281D0063E01D /* Color.plist in Resources */,
-				5637C626222A281D0063E01D /* WX20190227-205248@2x.png in Resources */,
 				5637C625222A281D0063E01D /* Font.plist in Resources */,
 				5637C623222A281D0063E01D /* Server.plist in Resources */,
 			);
